@@ -1,0 +1,13 @@
+(function (n) {
+  switch (n.location.host.toLocaleLowerCase()) {
+    case "www.xv8.com.tw":
+      n.document.write(
+        '<script> window.appier_q = window.appier_q || []; window.appier_q.push({"t": "register", "content": { "id": "28d5", "site": "xv8.com.tw" }},            { "t": "pv_track", "action_id": "3a59c43c6043e87", "track_id": "9733f4084922962", "isCountReload": true, "counter": 0 },            { "t": "pv_track", "action_id": "24bb982dd08fe87", "track_id": "9733f4084922962", "isCountReload": false, "counter": 1 });             window.onload=function(){ document.querySelector(".btn_register").addEventListener(\'click\', function () { window.appier_q = window.appier_q || [];            window.appier_q.push({ "t": "register", "content": { "id": "28d5", "site": "xv8.com.tw" } },            { "t": "type_conversion", "content": "submit", "action_id": "2552a8178721e87", "track_id": "9733f4084922962", "opts": { "unique_key": "true" } } )});};</script>            <script src ="//jscdn.appier.net/aa.js?id=xv8.com.tw" defer></script>'
+      );
+      break;
+    case "www.mk58.com.tw":
+      n.document.write(
+        "<script src=\"//cdn.doublemax.net/js/rtid.js\"></script>           <script src=\"//dmp.eland-tech.com/dmpreceiver/eland_tracker.js\"></script>           <script async src=\"https://cdn.doublemax.net/dmp/cft/tracker.js\"></script>           <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-149604805-1\"></script>           <script>clickforce_rtid(\"9076001\");            ElandTracker.Track({'source': 'CAP9076','trackType':'view','trackSubfolderDepth':3,'targetType':'usual'});clickforce_rtid(\"9076002\");            ElandTracker.Track({'source': 'CAP9076','trackType':'view','trackSubfolderDepth':3,'targetType':'pageview'});            window.cft=window.cft||function(){(cft.q = cft.q || []).push([].slice.call(arguments))};            cft('setSiteId', 'CF-191000047836');cft('setEnableCookie');cft('setViewPercentage');cft('setTPCookie');            window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments); }gtag('js', new Date());gtag('config', 'UA-149604805-1');            window.onload=function(){ document.querySelector(\".btn_register\").addEventListener('click', function () {clickforce_rtid(\"9076003\");ElandTracker.Track({'source':'CAP9076','trackType':'click','trackSubfolderDepth':3,'targetType':'CF_EventOne'});cft('send','event',{ action:'CF_EventOne',category:'',label:'',});gtag('event','CF_EventOne',{'event_category':'event','send_to':'UA-149604805-1'});},false)};</script>"
+      );
+  }
+})(window);

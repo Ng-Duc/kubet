@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html ng-app="OBSMobileApp">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-siteapp" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-title" content="KU Web" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="mobile-web-app-capable" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Areas/Mobile/Content/Images/TouchIcon20220413/favicon-16x16.png"
+    />
+    <title>KU Web</title>
+    <!--網址加入主畫面捷徑Icon END-->
+    <meta name="browsermode" content="application" />
+    <meta charset="utf-8" />
+    <link
+      href="/bundles/mobile_main.css?v=9fCAUhBFocpjUWP99VQqoxShYAsy7dCJaZkVp4kj0LI1"
+      rel="stylesheet"
+    />
+    <link
+      href="/bundles/swiper.css?v=qmo1E1lqj-7WF0jkTyL-iZVyJnEJVJqQ0tAfO2msk841"
+      rel="stylesheet"
+    />
+    <link
+      href="/bundles/mobile_home.css?v=zczFRCfII55Q1-9H4sDpVw6ONf0dM9V0nuPhiGReTH41"
+      rel="stylesheet"
+    />
+    <link
+      href="/bundles/mobile_join.css?v=HSApekfekR0SNzKXOQuunlVnntSiXRcI46hFm5ziMGU1"
+      rel="stylesheet"
+    />
+    <script>
+      var isPageHide = false;
+      window.addEventListener("pageshow", function (e) {
+        if (e.persisted) {
+          // window.location.reload();
+        } else if (isPageHide) {
+          // window.location.reload();
+        }
+      });
+      window.addEventListener("pagehide", function (e) {
+        isPageHide = true;
+      });
+    </script>
+  </head>
+  <style>
+    .swal2-container {
+      display: none !important;
+    }
+  </style>
+  <body class="login_body">
+    <a
+      href="https://www.mykubet.com/"
+      style="display: block; overflow: hidden; height: 0; width: 0"
+    ></a>
+    <a
+      href="https://www.kubetkubet.com/"
+      style="display: block; overflow: hidden; height: 0; width: 0"
+    ></a>
+    <a
+      href="https://www.kubetnav.com/"
+      style="display: block; overflow: hidden; height: 0; width: 0"
+    ></a>
+    <a
+      href="https://te77.net/"
+      style="display: block; overflow: hidden; height: 0; width: 0"
+    ></a>
+    <a
+      href="https://www.ex589.com/home/"
+      style="display: block; overflow: hidden; height: 0; width: 0"
+    ></a>
+    <a
+      href="https://www.casino5168.com/"
+      style="display: block; overflow: hidden; height: 0; width: 0"
+    ></a>
+    <a
+      href="https://www.ex5888.com/"
+      style="display: block; overflow: hidden; height: 0; width: 0"
+    ></a>
+    <ajax-anti-forgery-token
+      token="9VG3X3tPlJoIvkfYusOC1mqmbvW7uglAPVuZ8yAEuf-DlN8Sz25RJ5DG1QCFLSEZ7y-geVOj8ipCgEU7kLUrZO4zp_U1:ef_sSmrOVcNj2V1E0ZNDQsZ5Qy1SI-ZE4y07V0Z3WQoESQMBqMfxMijnqsr2hkYPNpRYoHZDvGxvMv1C175L_h59fM81"
+    ></ajax-anti-forgery-token>
+    <div ng-controller="LoginCtrl as ctrl">
+      <div ng-if="!ctrl.needSetProtectCode">
+        <input type="hidden" id="ismobile" value="true" />
+        <div
+          ng-cloak
+          ng-controller="ADCtrl as ctrl"
+          id="top_btnAD"
+          class=""
+          ng-class="ctrl.IsShowAppDownLoad && false ? 'btn_AD' : ''"
+        ></div>
+        <div class="bg_header">
+          <img
+            class="img_header"
+            src="/Areas/Mobile/Content/Images/logo_KUbet.svg"
+          />
+          <div class="header_R">
+            <a
+              class="btn_join"
+              ng-cloak
+              onclick="window.location.href='/mobile/add'"
+              >Đăng k&#253;</a
+            >
+            <a class="btn_login" id="callLogin" ng-click="ctrl.ShowLogIn()"
+              >Đăng nhập</a
+            >
+          </div>
+        </div>
+        <!--頁面內容-->
+        <div class="container_main container_login">
+          <div class="swiper swiper2">
+            <div class="swiper-wrapper" ng-click="ctrl.DeleteSessionStorage()">
+              <div class="swiper-slide">
+                <a href="/Mobile/Event/RaffleTicket"
+                  ><img
+                    src="https://images.vc7397k.net/FileSystem/Images/961f06eca0324ce7a15784c1c084f3d3.jpg"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/Mobile/Home/SponRecord?showTopBar=1&showFooterBar=0"
+                  ><img
+                    src="https://images.vc7397k.net/FileSystem/Images/8815e36336904ebda36de086bae4f1c2.jpg"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  style="cursor: default"
+                  src="https://images.vc7397k.net/FileSystem/Images/7db8c8a77d5b47f4998d3f50a904a928.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  style="cursor: default"
+                  src="https://images.vc7397k.net/FileSystem/Images/6cdf844b2e284d0c95eb97bc15b66e85.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  style="cursor: default"
+                  src="https://images.vc7397k.net/FileSystem/Images/6440370bc389403ea7650407a40a4d4e.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <a href="/Mobile/BonusCenter/LatestOffers?tab=2"
+                  ><img
+                    src="https://images.vc7397k.net/FileSystem/Images/86194aada50b4e5b9bf27dc1b7d53674.jpg"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  style="cursor: default"
+                  src="https://images.vc7397k.net/FileSystem/Images/3dcad153f40846158e816b20a412a15c.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  style="cursor: default"
+                  src="https://images.vc7397k.net/FileSystem/Images/7fd57363b7c24016acc1440e204cc35e.jpg"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="GameList">
+            <style>
+              .transMsg {
+                margin-top: 15%;
+                height: 100%;
+              }
+              .transMsg img {
+                margin: 0 auto;
+                width: 20%;
+                display: block;
+              }
+              .transMsg span {
+                display: table;
+                text-align: center;
+                margin-top: 30px;
+                width: 100%;
+                vertical-align: middle;
+                font-size: 20px;
+                line-height: 30px;
+              }
+            </style>
+            <div class="GameList_L"></div>
+            <div class="GameList_RBox swiper swiper1" block-ui="gameListBlock">
+              <ajax-anti-forgery-token
+                token="BBPTpErBGdzk8Lrc-F2vY15tW_tHr74ITpvrzIzAi4D5DXE__7g0WujNsJVCQO3M8ZlM0d3CsDDXJCTT4Xmcgm3Fmew1:RUnkrgYayZRudeB2NjumRg6kX7Y0Hx_vUGR6RlmYOVOOBDqsvtC0VVMWvL1WYlsq09DRVQw2JRScaEX6ePg93snlERM1"
+              ></ajax-anti-forgery-token
+              ><input type="hidden" id="PltformMember" value="TK Chính" /><input
+                type="hidden"
+                id="PltformNBB"
+                value="KU Thể Thao"
+              /><input
+                type="hidden"
+                id="PltformBB_LiveGame"
+                value="KU Casino"
+              /><input type="hidden" id="PltformTS" value="JZ Thể Thao" /><input
+                type="hidden"
+                id="PltformBB_Ball"
+                value="KU Xổ Số"
+              /><input type="hidden" id="PltformDDD" value="3D" /><input
+                type="hidden"
+                id="PltformAGIN"
+                value="AG"
+              /><input type="hidden" id="PltformWM" value="WM" /><input
+                type="hidden"
+                id="PltformGPI"
+                value="GPI"
+              /><input type="hidden" id="PltformDG" value="DG" /><input
+                type="hidden"
+                id="PltformSA"
+                value="SA"
+              /><input type="hidden" id="PltformAES" value="AES" /><input
+                type="hidden"
+                id="PltformEVO"
+                value="EVO"
+              /><input type="hidden" id="PltformXG" value="XG" /><input
+                type="hidden"
+                id="PltformOBLive"
+                value="DB Casino"
+              /><input type="hidden" id="PltformCMD" value="CMD" /><input
+                type="hidden"
+                id="PltformOneBook"
+                value="SABA"
+              /><input type="hidden" id="PltformAI" value="AI" /><input
+                type="hidden"
+                id="PltformNewBBIN"
+                value="BBIN"
+              /><input type="hidden" id="PltformOBSport" value="PANDA" /><input
+                type="hidden"
+                id="PltformIMone"
+                value="IM"
+              /><input
+                type="hidden"
+                id="PltformOBESport"
+                value="DB E-sports"
+              /><input type="hidden" id="PltformBNG" value="BNG" /><input
+                type="hidden"
+                id="PltformCQNine"
+                value="CQ9"
+              /><input type="hidden" id="PltformPLS" value="PLS" /><input
+                type="hidden"
+                id="PltformRKFive"
+                value="RK5"
+              /><input type="hidden" id="PltformDS" value="DS" /><input
+                type="hidden"
+                id="PltformLC"
+                value="V8"
+              /><input type="hidden" id="PltformKS" value="KS" /><input
+                type="hidden"
+                id="PltformPG"
+                value="PG"
+              /><input type="hidden" id="PltformKA" value="KA" /><input
+                type="hidden"
+                id="PltformFTG"
+                value="FTG"
+              /><input type="hidden" id="PltformFC" value="FC" /><input
+                type="hidden"
+                id="PltformAT"
+                value="AT"
+              /><input type="hidden" id="PltformSM" value="COOL-IN" /><input
+                type="hidden"
+                id="PltformLover"
+                value="Quà tặng miễn phí"
+              /><input
+                type="hidden"
+                id="PltformKUIM"
+                value="Phòng chat KU"
+              /><input
+                type="hidden"
+                id="PltformAnchorGift"
+                value="AnchorGift"
+              /><input
+                type="hidden"
+                id="PltformFriendReward"
+                value="Ví bạn bè"
+              /><input type="hidden" id="PltformAmeba" value="AE" /><input
+                type="hidden"
+                id="PltformAVIA"
+                value="AVIA"
+              /><input type="hidden" id="PltformPS" value="PS" />
+              <div class="swiper-wrapper">
+                <div class="GameList_R on swiper-slide">
+                  <div
+                    class="btn_GLhotLive"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>KU CASINO</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLhotLoto"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>KU XỔ SỐ</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLhotSport"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>KU THỂ THAO</h1>
+                      <div class="logo_CAO">
+                        <img
+                          src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                        />
+                        <img
+                          src="/Areas/Mobile/Content/Images/vi-vn/logo_CAO.svg"
+                        />
+                        <img
+                          src="/Areas/Mobile/Content/Images/vi-vn/logo_OSA.svg"
+                        />
+                      </div>
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLhotSlot"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>3D GAMES</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLhotCool aniCI"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>COOL - IN<br />LIVE</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_CI.svg"
+                      />
+                      <div class="aniTxt"></div>
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div class="boxGL">
+                    <div
+                      class="btn_GLhotStudio"
+                      ng-click="ctrl.ShowLogIn()"
+                      enable-protect="false"
+                    >
+                      <div class="t_GL">
+                        <h1>PHIM ẢNH</h1>
+                        <img src="/Areas/Mobile/Content/Images/logo_18.svg" />
+                      </div>
+                    </div>
+                    <div
+                      class="btn_GLhotCAO"
+                      window-open-simple="/Mobile/Home/SponRecord"
+                      target="_self"
+                      enable-protect="false"
+                    >
+                      <div class="t_GL">
+                        <h1>ĐỐI TÁC<br />LALIGA</h1>
+                        <img
+                          src="/Areas/Mobile/Content/Images/vi-vn/logo_LaLiga.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="GameList_R swiper-slide">
+                  <div
+                    class="btn_GLliveKU w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_hot"></div>
+                    <div class="t_GL">
+                      <h1>KU</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveDG"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>DG</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_DG.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveAES"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>AES</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_AES.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveEVO"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>EVO</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_EVO.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveWM"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>WM</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_WM.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveAG"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>AG</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_AG.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveSA"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>SA</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_SA.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveGPI"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>GPI</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_GPI.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLliveOB"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>DB</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_OBlive.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                </div>
+                <div class="GameList_R wholeTwo swiper-slide">
+                  <div
+                    class="btn_GLlotoKU w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_hot"></div>
+                    <div class="t_GL">
+                      <h1>KU</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLlotoBBIN w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>BBIN</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_BBIN.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                </div>
+                <div class="GameList_R swiper-slide">
+                  <div
+                    class="btn_GLsportKU w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_hot"></div>
+                    <div class="t_GL">
+                      <h1>KU</h1>
+                      <div class="logo_CAO">
+                        <img
+                          src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                        />
+                        <img
+                          src="/Areas/Mobile/Content/Images/vi-vn/logo_CAO.svg"
+                        />
+                        <img
+                          src="/Areas/Mobile/Content/Images/vi-vn/logo_OSA.svg"
+                        />
+                      </div>
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLsportJZ"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>JZ</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_JZ.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLsportSB"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>SABA</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_SABA.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLsportCMD"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>CMD</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_CMD.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLsportAI"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>AI</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_AI.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLsportAG"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>AG</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_AG.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLsportOB"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>PANDA</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_OBsport.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                </div>
+                <div class="GameList_R swiper-slide">
+                  <div
+                    class="btn_GLslot3D"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_hot"></div>
+                    <div class="t_GL">
+                      <h1>3D</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotPG"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>PG</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_PG.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotFC"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_new"></div>
+                    <div class="t_GL">
+                      <h1>FC</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_FC.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotBNG"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>BNG</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_bng.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotCQ9"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>CQ9</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_CQ9.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotDS"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>DS</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_DS.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotPLS"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>PLS</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_playson.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotKA"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>KA</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KA.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotFTG"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>FTG</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_FTG.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLslotRK5"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>RK5</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_RK5.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                </div>
+                <div class="GameList_R wholeTwo swiper-slide">
+                  <div
+                    class="btn_GLchess3D w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_hot"></div>
+                    <div class="t_GL">
+                      <h1>3D</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLchessV8 w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>V8</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_V8.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                </div>
+                <div class="GameList_R swiper-slide">
+                  <div
+                    class="btn_GLfish3D w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_hot"></div>
+                    <div class="t_GL">
+                      <h1>3D</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KUyo.svg"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLfishDS"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>DS</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_DS.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLfishAG"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="GL_new"></div>
+                    <div class="t_GL">
+                      <h1>AG</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_AG.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLfishKA"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>KA</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KA.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLfishKS"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>KS</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_KS.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLfishCQ9"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>CQ9</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_CQ9.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLfishV8"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>V8</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_V8.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                </div>
+                <div class="GameList_R wholeThree swiper-slide">
+                  <div
+                    class="btn_GLesportIM w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>IM</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_IM.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLesportSB w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>SABA</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_SABA.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                  <div
+                    class="btn_GLesportOB w100"
+                    ng-click="ctrl.ShowLogIn()"
+                    enable-protect="false"
+                  >
+                    <div class="t_GL">
+                      <h1>DB</h1>
+                      <img
+                        src="/Areas/Mobile/Content/Images/vi-vn/logo_OBesports.png"
+                      />
+                    </div>
+                    <div class="img_GL"></div>
+                  </div>
+                </div>
+              </div>
+              <input
+                type="hidden"
+                value='[{"menuName":"HotGame","name":"HOT","iconClass":"ic_GLhot","sort":1},{"menuName":"LiveGame","name":"LIVE CASINO","iconClass":"ic_GLlive","sort":2},{"menuName":"LotteryGame","name":"XỔ SỐ","iconClass":"ic_GLloto","sort":3},{"menuName":"SportGaming","name":"THỂ THAO","iconClass":"ic_GLsport","sort":4},{"menuName":"EGame","name":"GAMES","iconClass":"ic_GLslot","sort":5},{"menuName":"ChessGame","name":"ĐỐI KH&#193;NG","iconClass":"ic_GLchess","sort":6},{"menuName":"EFishGame","name":"BẮN C&#193;","iconClass":"ic_GLfish","sort":7},{"menuName":"ESportGame","name":"E-SPORTS","iconClass":"ic_GLesport","sort":8}]'
+                id="GameMainMenu"
+              />
+            </div>
+          </div>
+          <div>
+            <image
+              src="/Content/Images/logo_KU.png"
+              style="display: none"
+              onload="IMG_ID = '29039ed48c7749aa8a4d7d7b0d3a0eb1';IMG_PG = 'e3f08305dF03m1Dp'"
+            ></image>
+          </div>
+        </div>
+        <!--公告視窗-->
+        <!--重要公告-->
+        <div
+          id="importantNews"
+          class="mask_IMP"
+          ng-controller="ImportantNewsCtrl as ctrl"
+          style="z-index: 99; display: none"
+        >
+          <div class="popup">
+            <div class="btn_close" ng-click="ctrl.CloseImportantNews()"></div>
+            <div class="popup_T">Th&#244;ng b&#225;o quan trọng</div>
+            <div class="popup_In">
+              <div
+                bind-html-compile="ctrl.model.ImportantNewsItem.NewsContent"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!--2023女優活動 Icon-->
+        <!--周周抽-->
+        <!--周周抽-->
+        <div
+          class="btn_weekly"
+          style="z-index: 8 !important"
+          ng-controller="RaffleTicketIconCtrl as ctrl"
+          ng-cloak
+          ng-click="ctrl.RedirectPage('/Mobile/Event/RaffleTicket',true)"
+          ng-show="ctrl.model.ShowIcon"
+          id="dragRaffleTicket"
+        >
+          <div class="btn_closeACT" ng-click="ctrl.CloseIcon($event)"></div>
+        </div>
+        <input
+          type="hidden"
+          id="raffleStatusTips"
+          value="關閉但顯示入口時說明"
+        />
+        <!--頁面內容 end-->
+        <div class="footer login">
+          <style>
+            .footer_maintainTxt {
+              word-wrap: break-word;
+              word-break: normal;
+            }
+          </style>
+          <a
+            href="/Mobile/BonusCenter/LatestOffers"
+            class="footer_list btn_footer_gift"
+          >
+            <h5>Ưu Đ&#227;i</h5>
+          </a>
+          <a
+            href="/Mobile/Member/ServiceCenter"
+            class="footer_list btn_footer_serv"
+          >
+            <h5>Hỗ trợ</h5>
+          </a>
+          <a class="footer_list btn_footer_DW off" ng-click="ctrl.ShowLogIn()">
+            <h5>Nạp r&#250;t tiền</h5>
+          </a>
+          <a
+            class="footer_list btn_footer_tradeRec off"
+            ng-click="ctrl.ShowLogIn()"
+          >
+            <h5>Giao dịch</h5>
+          </a>
+          <a
+            class="footer_list btn_footer_menu off"
+            ng-click="ctrl.ShowLogIn()"
+          >
+            <h5>T&#244;i</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <style>
+      .loginID,
+      loginPW {
+        color: black;
+      }
+      .error_login {
+        margin-bottom: 20px;
+      }
+      .bg_header_main {
+        background: #0f548b repeat-y;
+        color: #fff;
+      }
+      @media (min-width: 350px) {
+        .swal2-popup.zh-cn {
+          min-width: 300px;
+        }
+      }
+    </style>
+    <div
+      ng-controller="LoginPopupCtrl as ctrl"
+      ng-style="!ctrl.needSetProtectCode?{'position':'fixed','z-index':'99'}:''"
+      block-ui="LoginPopup"
+    >
+      <!--彈跳視窗-->
+      <div
+        class="mask_all"
+        id="popup_login"
+        ng-init="ctrl.login.UniqueSessionId = 'TM1499261991400157184'"
+      >
+        <div class="popup_container">
+          <div class="popup_bg">
+            <div class="popup">
+              <div
+                class="btn_close popup_close"
+                ng-click="ctrl.ClearForm()"
+              ></div>
+              <div class="popup_T">Đăng nhập hội vi&#234;n</div>
+              <div class="popup_In">
+                <!--內容-->
+                <form
+                  id="frmLogin"
+                  name="frmLogin"
+                  form-validation-setting="false"
+                  custom-error-class="#errorstyle"
+                  error-panel-id="after"
+                  as-name="ctrl"
+                  data-action="/Mobile/Home"
+                >
+                  <input
+                    type="hidden"
+                    value="/Mobile/Register/Register"
+                    id="registerurl"
+                  />
+                  <input
+                    type="hidden"
+                    id="errorstyle"
+                    value='{"parent":".login_list", "parentError":"error_login", "spanError":"error_login_t"}'
+                  />
+                  <div class="login_list">
+                    <input
+                      id="txtAccountID"
+                      ng-if="!ctrl.login.ShowPhoneVerify"
+                      name="txtAccountID"
+                      type="text"
+                      class="loginID"
+                      placeholder="T&#224;i khoản / SĐT"
+                      autocomplete="off"
+                      required
+                      ckAccountID="true"
+                      ng-model="ctrl.login.AccountID"
+                      ng-focus="ctrl.KeyboardClose('CellPhone')"
+                      ng-change="ctrl.VerifyAccountID()"
+                      validate-input-reg-custom-immediate="false"
+                      validate-input-reg-custom="^[A-Za-z0-9]{0,10}$"
+                      validate-input-reg-custom-blur="ctrl.TriggerInputOnBlur(val)"
+                      max-length="10"
+                      ng-trim="false"
+                      capitalize
+                    />
+                    <input
+                      id="txtAccountID"
+                      ng-if="ctrl.login.ShowPhoneVerify"
+                      name="txtAccountID"
+                      type="text"
+                      class="loginID"
+                      placeholder="T&#224;i khoản"
+                      autocomplete="off"
+                      required
+                      ckSafetyAccountID="true"
+                      ng-model="ctrl.login.AccountID"
+                      ng-focus="ctrl.KeyboardClose('CellPhone')"
+                      ng-change="ctrl.VerifyAccountID()"
+                      validate-input-reg-custom-immediate="false"
+                      validate-input-reg-custom="^[A-Za-z0-9]{0,10}$"
+                      validate-input-reg-custom-blur="ctrl.TriggerInputOnBlur(val)"
+                      max-length="10"
+                      ng-trim="false"
+                      capitalize
+                    />
+                  </div>
+                  <div class="login_list">
+                    <input
+                      id="txtAccountPWD"
+                      name="txtAccountPWD"
+                      type="text"
+                      class="loginPW"
+                      placeholder="Mật khẩu"
+                      autocomplete="new-password"
+                      required
+                      ckAccountPWD="true"
+                      ng-model="ctrl.login.AccountPWD"
+                      ng-focus="ctrl.KeyboardClose('CellPhone')"
+                      ng-change="ctrl.VerifyAccountPWD()"
+                      validate-input-reg-custom-immediate="false"
+                      validate-input-reg-custom="^[A-Za-z0-9]{0,10}$"
+                      ng-trim="false"
+                      allow-trim-space="true"
+                      password-eye="false"
+                    />
+                    <a
+                      href="/Mobile/Member/ForgetPwd"
+                      ng-if="!ctrl.login.ShowPhoneVerify"
+                      class="loginFG"
+                      >Qu&#234;n mật khẩu?</a
+                    >
+                  </div>
+                  <div class="login_list" ng-if="ctrl.login.ShowPhoneVerify">
+                    <div
+                      id="CellPhone"
+                      name="CellPhone"
+                      class="keyboard loginNum"
+                      multi-show-numeric-keypad-v2
+                      tabindex="100"
+                      placeholder="H&#227;y nhập SĐT đ&#227; đăng k&#253;"
+                      ng-model="ctrl.login.CellPhone"
+                      focus-to-top
+                      numeric-blur="ctrl.VerifyCellPhoneByJqueryValid()"
+                      numeric-close="ctrl.VerifyCellPhoneByJqueryValid()"
+                      ng-bind="ctrl.login.CellPhone"
+                    ></div>
+                    <input
+                      type="hidden"
+                      id="hfCellPhone"
+                      ng-value="ctrl.login.CellPhone"
+                      required
+                      ckCellPhoneVerifyByLength="true"
+                      ckCellPhoneVerify="true"
+                    />
+                    <a href="/Mobile/Member/ForgetPwd" class="loginFG"
+                      >Qu&#234;n mật khẩu?</a
+                    >
+                  </div>
+                  <div>
+                    <div
+                      class="CellPhone"
+                      multi-numeric-keypad-v2="CellPhone"
+                      ng-model="ctrl.login.CellPhone"
+                      numeric-keypad-call-back="ctrl.VerifyCellPhone()"
+                      max-length="10"
+                    ></div>
+                  </div>
+                  <div ng-if="ctrl.login.ShowSliderCaptcha" class="popVerify">
+                    <slider-captcha
+                      slider-bg-image="{{ctrl.SliderBgImage}}"
+                      slider-image="{{ctrl.SliderImage}}"
+                      slider-success="ctrl.HandleCaptchaSuccess(data)"
+                      slider-fail="ctrl.HandleCaptchaFail()"
+                      slider-refresh="ctrl.SliderRefreshCallback()"
+                      trigger-Verify="ctrl.VerifyLoginForm()"
+                    ></slider-captcha>
+                  </div>
+                  <input
+                    type="button"
+                    class="btn_sign w50L"
+                    value="Đăng k&#253;"
+                    onclick="window.location.href='/web/add'"
+                  />
+                  <input
+                    type="button"
+                    ng-class="ctrl.login.ShowSliderCaptcha || !(true || ctrl.IsFriendExist()) ? 'btn_sign w100' : 'btn_sign w50R'"
+                    ng-disabled="!ctrl.IsLoginButtonEnable()"
+                    id="btnSignIn"
+                    value="Đăng nhập"
+                    ajax-submit-auto-disable-v2="Đang đăng nhập"
+                    ng-promise-click="ctrl.SignCheck()"
+                    ng-cloak
+                  />
+                </form>
+                <!--內容 end-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-cloak ng-if="ctrl.needSetProtectCode">
+        <div
+          ng-attr-id="container_main"
+          ng-class="{'container_main noID protectcode_container': ctrl.isLoginPage}"
+        >
+          <div class="bg_header bg_header_main">
+            <a class="btn_back" ng-click="ctrl.Back()"></a>
+            <h1 class="bg_header_name">C&#192;I ĐẶT</h1>
+          </div>
+          <form
+            method="post"
+            id="protectLoginForm"
+            name="protectLoginForm"
+            form-validation-setting="false"
+            error-span-no-remove="true"
+            as-name="ctrl"
+            ng-cloak
+          >
+            <div class="loginSet">
+              Bạn chưa c&#224;i mật khẩu bảo mật, xin h&#227;y x&#225;c nhận số
+              điện thoại để ho&#224;n tất việc c&#224;i đặt !
+            </div>
+            <div class="form" auto-block-area is-watch-http="true">
+              <ul>
+                <li class="marginBottom">
+                  <div class="form_T">Mật khẩu <span>bảo mật</span></div>
+                  <div class="form_In">
+                    <input
+                      id="ProtectCode"
+                      name="ProtectCode"
+                      class="w100"
+                      type="text"
+                      max-length="10"
+                      tips-content="Mật khẩu tối đa 10 k&#253; tự !"
+                      tips-content-refer="ProtectCode"
+                      autocomplete="off"
+                      placeholder="6 ~ 10 k&#253; tự chữ v&#224; số"
+                      ng-model="ctrl.login.ProtectCodeModel.PWD"
+                      ng-change="ctrl.VerifyProtectLoginForm();ctrl.VerifyProtectCode()"
+                      ng-focus="ctrl.KeyboardClose('ProtectCodeCaptchaCode'); ctrl.ShowTextPrompt()"
+                      validate-input-reg-custom="^[A-Za-z0-9]*$"
+                      validate-input-reg-custom-immediate="false"
+                      ng-trim="false"
+                      allow-trim-space="true"
+                      ckProtectCodeRequired="true"
+                      ckSimplePassword="true"
+                      password-eye="false"
+                    />
+                    <div class="txt_prompt" style="display: none">
+                      Kh&#244;ng được c&#224;i đặt giống với mật khẩu t&#224;i
+                      khoản!
+                    </div>
+                  </div>
+                  <span class="error_t right_t"></span>
+                </li>
+                <li class="marginBottom">
+                  <div class="form_T">Xin hãy <span>nhập lại</span></div>
+                  <div class="form_In">
+                    <input
+                      id="CheckPWDConfirmation"
+                      name="CheckPWDConfirmation"
+                      class="w100"
+                      type="text"
+                      maxlength="10"
+                      autocomplete="off"
+                      placeholder="6 ~ 10 k&#253; tự chữ v&#224; số"
+                      ng-model="ctrl.login.ProtectCodeModel.PWDConfirmation"
+                      ng-change="ctrl.VerifyProtectLoginForm();ctrl.VerifyCheckPWDConfirmation()"
+                      ng-focus="ctrl.KeyboardClose('ProtectCodeCaptchaCode')"
+                      ckProtectCodeConfirmation="true"
+                      validate-input-reg-custom="^[A-Za-z0-9]*$"
+                      validate-input-reg-custom-immediate="false"
+                      ng-trim="false"
+                      allow-trim-space="true"
+                      ckCheckPWDConfirmationRequired="true"
+                      password-eye="false"
+                    />
+                  </div>
+                  <span class="error_t right_t"></span>
+                </li>
+                <li
+                  ng-class="!ctrl.login.ElementManager.IsVisible('ProtectCodeSendCaptchaButton') && !ctrl.login.ProtectCodeModel.IsCaptchaCodeVerified ? 'marginBottom_modify':''"
+                >
+                  <div class="form_T">SĐT</div>
+                  <div class="form_In">
+                    <div
+                      class="w100"
+                      style="color: black"
+                      ng-model="ctrl.login.ProtectCodeModel.CellPhone"
+                      ng-bind="ctrl.login.ProtectCodeModel.CellPhone"
+                    ></div>
+                  </div>
+                  <div class="form_Code">
+                    <!-- 短信按鈕 -->
+                    <input
+                      type="button"
+                      class="btn_code"
+                      id="ProtectCodeSendCaptchaButton"
+                      ng-class="ctrl.GetSendCaptchaButtonClass()"
+                      ng-if="ctrl.login.ElementManager.IsVisible('ProtectCodeSendCaptchaButton') && !ctrl.login.ProtectCodeModel.IsCaptchaCodeVerified && !ctrl.login.ProtectCodeModel.IsCallCustomerService"
+                      ng-disabled="!ctrl.IsSendCaptchaButtonEnabled()"
+                      is-auto-disabled="false"
+                      ng-click="ctrl.SendCaptchaButtonClick()"
+                      ng-bind="ctrl.GetSendCaptchaButtonName()"
+                      original-name="{{ctrl.login.ProtectCodeModel.SendCaptchaButtonName}}"
+                      ng-value="ctrl.GetSendCaptchaButtonName()"
+                    />
+                    <input
+                      type="button"
+                      class="btn_code call"
+                      id="ProtectCodeSendCaptchaButton2"
+                      ng-if="!ctrl.login.ProtectCodeModel.IsCaptchaCodeVerified && ctrl.login.ProtectCodeModel.IsCallCustomerService"
+                      ng-disabled="!ctrl.IsSendCaptchaButtonEnabled()"
+                      ng-click="ctrl.SendCustomerService()"
+                      value="Li&#234;n hệ hỗ trợ"
+                    />
+                    <img
+                      ng-if="ctrl.login.ProtectCodeModel.IsCaptchaCodeVerified"
+                      class="icon_confirmOk"
+                      src="/Areas/Mobile/Content/Images/icon_confirmOk.svg"
+                      style="cursor: not-allowed"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div class="form_button">
+                <input
+                  type="button"
+                  class="w100"
+                  value="X&#225;c nhận"
+                  ng-promise-click="ctrl.SignCheck(true)"
+                  ajax-submit-auto-disable-v2="Đang đăng nhập"
+                  ng-disabled="!ctrl.login.ElementManager.IsEnabled('ProtectCodeLoginButton')"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="mask_join mask_new" id="loginSet" style="display: none">
+        <div class="popup_container">
+          <div class="popup_bg">
+            <div class="popup">
+              <div class="popup_T">Tin nhắn</div>
+              <div class="popup_In">
+                <!--內容-->
+                <div class="popupCenter">
+                  Chưa c&#224;i đặt mật khẩu bảo mật sẽ kh&#244;ng thể đăng
+                  nhập, c&#243; tiếp tục hay kh&#244;ng ?
+                </div>
+              </div>
+              <div class="popup_button">
+                <input
+                  type="button"
+                  class="w50L"
+                  value="Tho&#225;t"
+                  ng-click="ctrl.popupConfirm()"
+                />
+                <input
+                  type="button"
+                  class="w50R popup_close"
+                  value="Tiếp tục"
+                  ng-click="ctrl.popupCancel()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--帳號密碼錯誤被鎖定禁登提示-->
+      <div class="mask_all mask_new" id="loginLock" style="display: none">
+        <div class="popup_container">
+          <div class="popup_bg">
+            <div class="popup">
+              <div class="popup_T">Tin nhắn</div>
+              <div class="popup_In">
+                <div class="popupCenter">
+                  <span
+                    Bind-Html-Compile="ctrl.login.SignInOverLimitErrorMsg"
+                  ></span>
+                </div>
+              </div>
+              <div class="popup_button">
+                <input
+                  type="button"
+                  class="w50L"
+                  value="Hủy"
+                  ng-click="ctrl.SignInFailedOverLimitClose()"
+                />
+                <input
+                  class="w50R"
+                  type="button"
+                  value="Li&#234;n hệ hỗ trợ"
+                  ng-click="ctrl.RedirectPage('/Mobile/Member/ServiceCenter', 'ServiceCenter')"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input
+      type="hidden"
+      id="hfLoginVerification"
+      ng-init="ctrl.login.LoginVerification = '0'"
+      ng-value="0"
+    />
+    <style>
+      #mask_SliderCaptcha .popup {
+        width: fit-content;
+      }
+      #mask_SliderCaptcha .popup_In {
+        padding: 0 25px 6px 25px;
+      }
+      /*T39349 取代main.css的popup屬性與margin-top重置*/
+      #mask_SliderCaptcha .popup_In {
+        padding-top: 18px !important;
+      }
+      #mask_SliderCaptcha .popup_button {
+        margin-top: 0px !important;
+        padding-bottom: 18px !important;
+      }
+      @media (min-width: 320px) and (max-width: 360px) {
+        #mask_SliderCaptcha .popup_In {
+          padding-top: 15px !important;
+          padding: 0 7px 0 7px;
+        }
+        #mask_SliderCaptcha .popup_button {
+          margin-top: 0px !important;
+          padding-bottom: 15px !important;
+        }
+      }
+      @media (min-width: 361px) and (max-width: 399px) {
+        #mask_SliderCaptcha .popup_In {
+          padding: 0 17px 0 17px;
+        }
+      }
+      @media (min-width: 400px) {
+        #mask_SliderCaptcha .popup_In {
+          padding-top: 26px !important;
+        }
+        #mask_SliderCaptcha .popup_button {
+          margin-top: 0px !important;
+          padding-bottom: 26px !important;
+        }
+      }
+    </style>
+    <div
+      ng-controller="CaptchaCodePanelCtrl as ctrl"
+      block-ui="CaptchaCodePanel"
+    >
+      <!--彈跳驗證碼視窗-->
+      <div
+        class="mask_all"
+        id="msgBox"
+        style="display: none"
+        ng-style="{'display': ctrl.IsVisible() ? 'block' : 'none'}"
+        ng-show="ctrl.IsVisible()"
+      >
+        <div class="msgBox">
+          <div class="btn_close" ng-click="ctrl.EmitPanelClose()"></div>
+          <div
+            class="msgBox_T"
+            ng-show="ctrl.model.CurrentVerifyModeCache == 1"
+          >
+            X&#225;c nhận qua SMS
+          </div>
+          <div
+            class="msgBox_Txt"
+            ng-show="ctrl.model.CurrentVerifyModeCache == 1"
+          >
+            Đ&#227; gửi m&#227; x&#225;c nhận đến
+            {{ctrl.model.Options.CellPhone}}
+          </div>
+          <div
+            class="msgBox_T"
+            ng-show="ctrl.model.CurrentVerifyModeCache == 2"
+          >
+            X&#225;c nhận bằng giọng n&#243;i
+          </div>
+          <div
+            class="msgBox_Txt"
+            ng-show="ctrl.model.CurrentVerifyModeCache == 2"
+          >
+            Đ&#227; gọi đến số {{ ctrl.model.Options.CellPhone }}
+            <br />
+            <img
+              class="img_call"
+              ng-src="/Areas/Mobile/Content/Images/vi-vn/icon_errorHint.svg"
+            />Vui l&#242;ng ch&#250; &#253; để nhận cuộc gọi！
+          </div>
+          <ul class="msgBox_Num">
+            <li ng-class="ctrl.model.CaptchaCode1 == '' ? '' : 'on'">
+              {{ctrl.model.CaptchaCode1}}
+            </li>
+            <li ng-class="ctrl.model.CaptchaCode2 == '' ? '' : 'on'">
+              {{ctrl.model.CaptchaCode2}}
+            </li>
+            <li ng-class="ctrl.model.CaptchaCode3 == '' ? '' : 'on'">
+              {{ctrl.model.CaptchaCode3}}
+            </li>
+            <li ng-class="ctrl.model.CaptchaCode4 == '' ? '' : 'on'">
+              {{ctrl.model.CaptchaCode4}}
+            </li>
+          </ul>
+          <div
+            id="verifyCaptchaCodeButton"
+            class="CaptchaCode"
+            multi-numeric-keypad-v2="CaptchaCode"
+            ng-model="ctrl.model.CaptchaCode"
+            numeric-keypad-call-back="ctrl.VerifyCaptchaChange(true)"
+            max-length="4"
+          ></div>
+          <div class="form_button">
+            <input
+              type="button"
+              class="w100 bg_colorDB"
+              id="btn02"
+              ng-class="ctrl.GetSendCaptchaButtonClass()"
+              ng-click="ctrl.SendCaptchaButtonClick()"
+              ng-disabled="!ctrl.model.ElementManager.IsEnabled('sendCaptchaButton')"
+              ng-value="ctrl.GetSendCaptchaButtonName()"
+              ng-if="ctrl.model.CallCustomerServiceCounts <= 0 && ctrl.IsSendCaptchaButtonEnabled()"
+            />
+            <div class="w100 off" ng-if="!ctrl.IsSendCaptchaButtonEnabled()">
+              Gửi lại
+              <span class="t_yellow">{{ctrl.model.CountDownSecond}} S</span>
+            </div>
+            <input
+              type="button"
+              class="w100 bg_colorDG"
+              id="btn03"
+              ng-value="ctrl.model.CallCustomerServiceButtonName"
+              ng-click="ctrl.SendCustomerService()"
+              ng-disabled="ctrl.model.CloseResult.LockCallCustomerService"
+              ng-if="ctrl.model.CallCustomerServiceCounts > 0 && ctrl.IsSendCaptchaButtonEnabled()"
+            />
+          </div>
+        </div>
+      </div>
+      <!--滑塊驗證碼-->
+      <div class="mask_join full_layout" id="mask_SliderCaptcha">
+        <div class="popup_container">
+          <div class="popup_bg_upper full_layout">
+            <!--T38732 11/11 安全驗證彈窗按鈕處白背景需完整顯示-->
+            <div class="popup" style="background-color: #fff">
+              <div
+                class="btn_close popup_close"
+                ng-click="ctrl.CaptchaImageClose()"
+              ></div>
+              <div class="popup_T">
+                <span>X&#225;c nhận bảo mật</span>
+              </div>
+              <div class="popup_In">
+                <!--內容-->
+                <slider-captcha
+                  slider-bg-image="{{ctrl.SliderBgImage}}"
+                  slider-image="{{ctrl.SliderImage}}"
+                  slider-max-error="5"
+                  slider-success="ctrl.HandleCaptchaSuccess(data)"
+                  slider-fail="ctrl.HandleCaptchaFail()"
+                  slider-refresh="ctrl.SliderRefreshCallback()"
+                ></slider-captcha>
+                <!--內容 end-->
+              </div>
+              <div class="popup_button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mask_all"
+        id="PopSuccess"
+        ng-click="ctrl.ClosePopSuccess();"
+        style="display: none"
+      >
+        <div class="popup_container">
+          <div class="popup_bg">
+            <div class="popup popupShort">
+              <div class="popup_In">
+                <div class="popupS_T">
+                  <img src="/Areas/Mobile/Content/Images/icon_checkGreen.svg" />
+                </div>
+                <div class="popupS_In">X&#225;c minh th&#224;nh c&#244;ng!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="hidden" id="hfDefaultCountDownSecond" value="30" />
+    </div>
+    <script src="//tbab953.vnkucdn.net/bundles/thirdpartyplugin.m-memberportal.20181204A.js"></script>
+    <script src="//tbab953.vnkucdn.net/bundles/swiper.v7.4.1.m-memberportal.20181204A.js"></script>
+    <script src="//tbab953.vnkucdn.net/bundles/base.m-memberportal.20181204A.js"></script>
+    <script src="/bundles/app.m.js?v=KvJKEB8qoGyAClFGPU_2rLwLg8IBMXMXOpoNQGoTUHk1"></script>
+    <script src="/bundles/menu.m.js?v=A9TwjUZ_lNQ8uXxP3TdQrm9xZUni6XufnDjKYx7CN3U1"></script>
+    <script src="/bundles/app/mobile-home-login.js?v=gdRjfa8TzzgQh7YghBReupqCIp3YBI-EHYj88EbRuGQ1"></script>
+    <script type="text/javascript">
+      OBSMobileApp.GlobalJsConfig.SetConfig({
+        SignalRNFSvcHost: "//sgrapi.ku6688.net/NFSvc",
+        SignalRNFSvcIsDebug: "false",
+        GetGameBalanceTime: "30",
+        DDDFastTransferCallBackUrl: "",
+        FastTransferGameID: "",
+        EntryRef: "",
+        SiteCulture: "vi-vn",
+        CountryID: "618",
+        SiteCultureAcronym: "VN",
+      });
+    </script>
+    <script>
+      $(function () {
+        try {
+          // 處理 VIVO 這個爛貨的實體返回不刷新問題
+          var nowToken = $("ajax-anti-forgery-token").attr("token");
+          var beforeToken = sessionStorage.getItem("antiToken");
+          if (beforeToken) {
+            if (beforeToken === nowToken) {
+              // window.location.reload();
+            } else {
+              sessionStorage.setItem("antiToken", nowToken);
+            }
+          } else {
+            sessionStorage.setItem("antiToken", nowToken);
+          }
+        } catch (e) {}
+      });
+    </script>
+    <div id="valid-rule-block">
+      <valid-rule
+        rule-name="maxlength"
+        rule-message="Nhập 4 ~ 10 k&#253; tự chữ v&#224; số hoặc số điện thoại"
+      ></valid-rule>
+      <valid-rule
+        rule-name="required"
+        rule-message="Bắt buộc điền"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckAccountID"
+        rule-message="Nhập 4 ~ 10 k&#253; tự chữ v&#224; số hoặc số điện thoại"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckSafetyAccountID"
+        rule-message="T&#224;i khoản l&#224; tổ hợp 4 ~ 10 k&#253; tự chữ v&#224; số"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckAccountPWD"
+        rule-message="6 ~ 10 k&#253; tự chữ v&#224; số"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckCellPhoneVerifyByLength"
+        rule-message="Vui l&#242;ng nhập số điện thoại ch&#237;nh x&#225;c"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckCellPhoneVerify"
+        rule-message="Sai quy c&#225;ch SĐT Việt Nam"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckPWD"
+        rule-message="6 ~ 10 k&#253; tự chữ v&#224; số"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckProtectCodeConfirmation"
+        rule-message="Mật khẩu bảo mật kh&#244;ng thống nhất!"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckProtectCodeRequired"
+        rule-message="Mật khẩu bảo mật kh&#244;ng được để trống!"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckCheckPWDConfirmationRequired"
+        rule-message="Xin h&#227;y nhập lại kh&#244;ng được để trống!"
+      ></valid-rule>
+      <valid-rule
+        rule-name="ckSimplePassword"
+        rule-message="Mật khẩu qu&#225; đơn giản, h&#227;y thiết lập lại"
+      ></valid-rule>
+    </div>
+    <div id="alert-rule-block">
+      <alert-rule
+        rule-name="系統異常請稍後再試"
+        rule-message="Lỗi hệ thống, vui l&#242;ng thử lại sau"
+      ></alert-rule>
+      <alert-rule
+        rule-name="網路異常，請刷新頁面"
+        rule-message="Lỗi mạng, vui l&#242;ng l&#224;m mới giao diện"
+      ></alert-rule>
+      <alert-rule
+        rule-name="請求異常，請稍後再試"
+        rule-message="Lỗi truy cập, vui l&#242;ng thử lại sau"
+      ></alert-rule>
+      <alert-rule rule-name="確認" rule-message="X&#225;c nhận"></alert-rule>
+      <alert-rule
+        rule-name="登入錯誤次數超過10次"
+        rule-message="Số lần đăng nhập sai vượt qu&#225; 10 lần"
+      ></alert-rule>
+      <alert-rule rule-name="登 錄" rule-message="Đăng nhập"></alert-rule>
+      <alert-rule rule-name="登錄中" rule-message="Đang đăng nhập"></alert-rule>
+      <alert-rule
+        rule-name="網站維護中，無法進行註冊"
+        rule-message="Trang mạng đang bảo tr&#236;, kh&#244;ng thể đăng k&#253; hội vi&#234;n"
+      ></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，目前會員註冊關閉中"
+        rule-message="Xin lỗi, hiện tại kh&#244;ng mở chức năng đăng k&#253; hội vi&#234;n"
+      ></alert-rule>
+      <alert-rule rule-name="請重新嘗試" rule-message="Thử lại"></alert-rule>
+      <alert-rule
+        rule-name="按住箭頭，向右滑動驗證"
+        rule-message="Trượt mũi t&#234;n gh&#233;p h&#236;nh"
+      ></alert-rule>
+      <alert-rule
+        rule-name="帳號/手機號碼"
+        rule-message="T&#224;i khoản / SĐT"
+      ></alert-rule>
+      <alert-rule rule-name="帳號" rule-message="T&#224;i khoản"></alert-rule>
+      <alert-rule
+        rule-name="未設置保護密碼則無法登入帳號，是否繼續？"
+        rule-message="Chưa c&#224;i đặt mật khẩu bảo mật sẽ kh&#244;ng thể đăng nhập, c&#243; tiếp tục hay kh&#244;ng ?"
+      ></alert-rule>
+      <alert-rule rule-name="離開" rule-message="Tho&#225;t"></alert-rule>
+      <alert-rule rule-name="繼續" rule-message="Tiếp tục"></alert-rule>
+      <alert-rule
+        rule-name="您今日驗證次數已達上限，請聯繫客服專員!"
+        rule-message="Số lần x&#225;c nhận trong ng&#224;y của bạn đ&#227; đạt mức tối đa, vui l&#242;ng li&#234;n hệ hỗ trợ!"
+      ></alert-rule>
+      <alert-rule
+        rule-name="客服人員將致電與您聯繫，請您留意接聽電話"
+        rule-message="Nh&#226;n vi&#234;n hỗ trợ sẽ li&#234;n hệ bạn, vui l&#242;ng ch&#250; &#253; để nhận cuộc gọi"
+      ></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，回電服務目前關閉中，請暫時使用其他客服管道聯繫我們，謝謝！"
+        rule-message="Xin lỗi, dịch vụ gọi lại hiện tại kh&#244;ng thể sử dụng, h&#227;y sử dụng c&#225;ch kh&#225;c để li&#234;n hệ với ch&#250;ng t&#244;i, cảm ơn!"
+      ></alert-rule>
+      <alert-rule rule-name="重發驗證碼" rule-message="Gửi lại"></alert-rule>
+      <alert-rule
+        rule-name="聯繫客服"
+        rule-message="Li&#234;n hệ hỗ trợ"
+      ></alert-rule>
+      <alert-rule
+        rule-name="獲取驗證碼"
+        rule-message="Gửi m&#227;"
+      ></alert-rule>
+      <alert-rule
+        rule-name="您輸入的手機號碼未驗證，請聯繫客服，謝謝！"
+        rule-message="Số điện thoại bạn nhập chưa x&#225;c nhận, vui l&#242;ng li&#234;n hệ hỗ trợ, c&#225;m ơn!"
+      ></alert-rule>
+      <alert-rule rule-name="發送中" rule-message="Đang gửi"></alert-rule>
+      <alert-rule
+        rule-name="保護密碼與登錄密碼不可相同"
+        rule-message="Mật khẩu bảo mật v&#224; Mật khẩu t&#224;i khoản kh&#244;ng được giống nhau"
+      ></alert-rule>
+      <alert-rule
+        rule-name="保護密碼與會員帳號不可相同"
+        rule-message="Phải kh&#225;c t&#224;i khoản đăng nhập"
+      ></alert-rule>
+      <alert-rule
+        rule-name="帳號或密碼錯誤"
+        rule-message="T&#224;i khoản hoặc mật khẩu sai"
+      ></alert-rule>
+      <alert-rule
+        rule-name="登入頻繁，請稍後再登入！！！"
+        rule-message="Đăng nhập qu&#225; thường xuy&#234;n, vui l&#242;ng đăng nhập sau!!!"
+      ></alert-rule>
+      <alert-rule rule-name="信息" rule-message="Tin nhắn"></alert-rule>
+      <alert-rule rule-name="短信" rule-message="Gửi m&#227;"></alert-rule>
+      <alert-rule
+        rule-name="請檢查輸入網址是否有誤，網路信號是否正常，請嘗試重新整理頁面或聯繫客服!"
+        rule-message="Vui l&#242;ng kiểm tra địa chỉ trang mạng ch&#237;nh x&#225;c hay kh&#244;ng, t&#237;n hiệu đường truyền c&#243; b&#236;nh thường kh&#244;ng, vui l&#242;ng l&#224;m mới giao diện hoặc li&#234;n hệ hỗ trợ!"
+      ></alert-rule>
+      <alert-rule
+        rule-name="您的帳號已被鎖定"
+        rule-message="T&#224;i khoản của bạn đ&#227; bị kh&#243;a"
+      ></alert-rule>
+      <alert-rule
+        rule-name="請聯繫客服，謝謝"
+        rule-message="Vui l&#242;ng li&#234;n hệ hỗ trợ, c&#225;m ơn"
+      ></alert-rule>
+      <alert-rule rule-name="讀取中" rule-message="loading"></alert-rule>
+      <alert-rule
+        rule-name="請勿提供手機驗證碼給他人！！"
+        rule-message="Vui l&#242;ng kh&#244;ng cung cấp m&#227; x&#225;c minh OTP cho bất k&#236; ai!!"
+      ></alert-rule>
+      <alert-rule rule-name="短信" rule-message="Gửi m&#227;"></alert-rule>
+      <alert-rule rule-name="語音" rule-message="Tin nhắn thoại"></alert-rule>
+      <alert-rule
+        rule-name="發送語音驗證碼"
+        rule-message="Gửi m&#227; x&#225;c nhận qua tin nhắn thoại"
+      ></alert-rule>
+      <alert-rule rule-name="重發" rule-message="Gửi lại"></alert-rule>
+      <alert-rule rule-name="重發驗證碼" rule-message="Gửi lại"></alert-rule>
+      <alert-rule rule-name="發送中" rule-message="Đang gửi"></alert-rule>
+      <alert-rule
+        rule-name="聯繫客服"
+        rule-message="Li&#234;n hệ hỗ trợ"
+      ></alert-rule>
+      <alert-rule
+        rule-name="已驗證"
+        rule-message="Đ&#227; x&#225;c nhận"
+      ></alert-rule>
+      <alert-rule rule-name="轉點中" rule-message="Đang chuyển"></alert-rule>
+      <alert-rule
+        rule-name="轉點金額不能大於帳戶餘額"
+        rule-message="Điểm chuyển kh&#244;ng được nhiều hơn số dư trong t&#224;i khoản"
+      ></alert-rule>
+      <alert-rule rule-name="載入中" rule-message="Đang tải"></alert-rule>
+      <alert-rule
+        rule-name="維護中"
+        rule-message="Đang bảo tr&#236;"
+      ></alert-rule>
+      <alert-rule
+        rule-name="請輸入轉點金額"
+        rule-message="Vui l&#242;ng nhập số tiền chuyển điểm"
+      ></alert-rule>
+      <alert-rule
+        rule-name="轉點成功"
+        rule-message="Chuyển điểm th&#224;nh c&#244;ng"
+      ></alert-rule>
+      <alert-rule
+        rule-name="進入遊戲"
+        rule-message="V&#224;o tr&#242; chơi"
+      ></alert-rule>
+      <alert-rule rule-name="關閉視窗" rule-message="Tắt cửa sổ"></alert-rule>
+      <alert-rule
+        rule-name="請輸入整數金額"
+        rule-message="Nhập số nguy&#234;n"
+      ></alert-rule>
+      <alert-rule
+        rule-name="請輸入金額"
+        rule-message="Nhập số điểm"
+      ></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，目前轉帳功能維護中"
+        rule-message="Xin lỗi, chức năng chuyển khoản đang bảo tr&#236;"
+      ></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，目前轉帳功能維護中！"
+        rule-message="Xin lỗi, chức năng chuyển khoản đang bảo tr&#236;！"
+      ></alert-rule>
+      <alert-rule
+        rule-name="平台轉帳維護中"
+        rule-message="Chuyển khoản bảo tr&#236;"
+      ></alert-rule>
+      <alert-rule
+        rule-name="您存入的額度高於上限"
+        rule-message="Số tiền bạn nạp v&#224;o cao hơn mức tối đa"
+      ></alert-rule>
+      <alert-rule
+        rule-name="您的可轉金額為0"
+        rule-message="Số tiền bạn c&#243; thể chuyển l&#224; 0"
+      ></alert-rule>
+      <alert-rule
+        rule-name="主帳戶餘額不足"
+        rule-message="Số dư của bạn kh&#244;ng đủ"
+      ></alert-rule>
+      <alert-rule
+        rule-name="今日互轉次數已達到限定值"
+        rule-message="Số lần chuyển điểm trong ng&#224;y đ&#227; đạt mức hạn chế"
+      ></alert-rule>
+      <alert-rule
+        rule-name="今日互轉額度已達限定值"
+        rule-message="Số điểm chuyển trong ng&#224;y đ&#227; đạt mức hạn chế"
+      ></alert-rule>
+      <alert-rule
+        rule-name="您的可用額度不足"
+        rule-message="Số dư của bạn kh&#244;ng đủ"
+      ></alert-rule>
+      <alert-rule
+        rule-name="代理商金額不足"
+        rule-message="Số dư đại l&#253; kh&#244;ng đủ"
+      ></alert-rule>
+      <alert-rule
+        rule-name="【{0}】與【{1}】互轉失敗，請聯繫客服！"
+        rule-message="【{0}】v&#224;【{1}】Chuyển điểm thất bại, vui l&#242;ng li&#234;n hệ hỗ trợ!"
+      ></alert-rule>
+      <alert-rule rule-name="主帳戶" rule-message="TK Ch&#237;nh"></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，目前存款功能暫不開放，請聯繫客服中心！"
+        rule-message="Xin lỗi, hiện tại chức năng nạp tiền tạm thời chưa mở, xin vui l&#242;ng li&#234;n hệ hỗ trợ kh&#225;ch h&#224;ng!"
+      ></alert-rule>
+      <alert-rule
+        rule-name="您已完善資料，待通過資料審核，"
+        rule-message="Bạn đ&#227; ho&#224;n tất tư liệu, vui l&#242;ng chờ th&#244;ng qua x&#233;t duyệt,"
+      ></alert-rule>
+      <alert-rule
+        rule-name="即開放存款，請耐心等候"
+        rule-message="Mở nạp tiền, vui l&#242;ng chờ đợi"
+      ></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，目前提款功能暫不開放，請聯繫客服中心！"
+        rule-message="Xin lỗi, hiện tại chức năng r&#250;t tiền tạm thời chưa mở, xin vui l&#242;ng li&#234;n hệ hỗ trợ kh&#225;ch h&#224;ng!"
+      ></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，目前存提款功能維護中"
+        rule-message="Xin lỗi, hiện nay chức năng nạp r&#250;t tiền đang bảo tr&#236;"
+      ></alert-rule>
+      <alert-rule
+        rule-name="很抱歉，目前存提款功能暫不開放，請聯繫客服中心！"
+        rule-message="Xin lỗi, hiện tại chức năng nạp r&#250;t tiền tạm thời chưa mở, xin vui l&#242;ng li&#234;n hệ hỗ trợ kh&#225;ch h&#224;ng!"
+      ></alert-rule>
+      <alert-rule
+        rule-name="您已完善資料，待通過資料審核，即開放存款，請耐心等候"
+        rule-message="Bạn đ&#227; ho&#224;n thiện th&#244;ng tin, sau khi x&#233;t duyệt th&#244;ng qua sẽ mở chức năng nạp tiền, vui l&#242;ng nhẫn nại chờ đợi"
+      ></alert-rule>
+      <alert-rule
+        rule-name="轉帳功能維護中"
+        rule-message="đang bảo tr&#236;"
+      ></alert-rule>
+      <alert-rule
+        rule-name="XXX與XXX互轉失敗，請重新操作"
+        rule-message="{0} v&#224; {1} Chuyển điểm thất bại, vui l&#242;ng thao t&#225;c lại"
+      ></alert-rule>
+      <alert-rule
+        rule-name="轉點失敗"
+        rule-message="Chuyển điểm thất bại"
+      ></alert-rule>
+      <alert-rule
+        rule-name="轉點失敗，請重新操作"
+        rule-message="Chuyển điểm thất bại, vui l&#242;ng thao t&#225;c lại"
+      ></alert-rule>
+      <alert-rule rule-name="繁忙中" rule-message="Đang bận"></alert-rule>
+      <alert-rule
+        rule-name="系統繁忙請稍候"
+        rule-message="Hệ thống đang bận, vui l&#242;ng chờ"
+      ></alert-rule>
+      <alert-rule
+        rule-name="正在維護中，請先至本網站其他項目進行投注！"
+        rule-message="đang bảo tr&#236;, vui l&#242;ng đặt cược hạng mục kh&#225;c trước, cảm ơn !"
+      ></alert-rule>
+      <alert-rule
+        rule-name="單筆互轉額度超過限定值"
+        rule-message="Số điểm chuyển vượt qu&#225; mức tối đa của một lần chuyển"
+      ></alert-rule>
+      <alert-rule
+        rule-name="主帳戶與XXX互轉失敗，請重新操作"
+        rule-message="TK Ch&#237;nh v&#224; {0} Chuyển điểm thất bại, vui l&#242;ng thao t&#225;c lại"
+      ></alert-rule>
+      <alert-rule
+        rule-name="主帳戶與XXX互轉失敗"
+        rule-message="T&#224;i khoản ch&#237;nh v&#224;《{0}》chuyển khoản cho nhau thất bại"
+      ></alert-rule>
+      <alert-rule rule-name="3D館" rule-message="3D"></alert-rule>
+      <alert-rule
+        rule-name="您沒有額度，請先進行轉帳！"
+        rule-message="您沒有額度，請先進行轉帳！"
+      ></alert-rule>
+      <alert-rule
+        rule-name="請求失敗"
+        rule-message="Y&#234;u cầu thất bại"
+      ></alert-rule>
+      <alert-rule rule-name="轉帳" rule-message="Chuyển khoản"></alert-rule>
+      <alert-rule
+        rule-name="操作次數過於頻繁，請稍候再試"
+        rule-message="Số lần thao t&#225;c qu&#225; thường xuy&#234;n, vui l&#242;ng thử lại sau"
+      ></alert-rule>
+      <alert-rule
+        rule-name="轉帳金額需高於5點以上"
+        rule-message="Số điểm chuyển phải cao hơn 5 điểm"
+      ></alert-rule>
+      <alert-rule
+        rule-name="轉帳金額低於限制，請轉入5點以上！"
+        rule-message="Số điểm chuyển thấp hơn hạn mức,vui l&#242;ng chuyển tr&#234;n 5 điểm!"
+      ></alert-rule>
+      <alert-rule
+        rule-name="轉帳金額低於限制"
+        rule-message="Số điểm chuyển thấp hơn hạn mức"
+      ></alert-rule>
+      <alert-rule
+        rule-name="請轉入5點以上"
+        rule-message="vui l&#242;ng chuyển từ 5 điểm trở l&#234;n"
+      ></alert-rule>
+      <alert-rule
+        rule-name="在3D電子遊戲中或離開遊戲30秒內，暫不允許提點"
+        rule-message="Đang trong 3D hoặc rời khỏi tr&#242; chơi trong v&#242;ng 30 gi&#226;y th&#236; kh&#244;ng được ph&#233;p chuyển điểm"
+      ></alert-rule>
+    </div>
+  </body>
+</html>

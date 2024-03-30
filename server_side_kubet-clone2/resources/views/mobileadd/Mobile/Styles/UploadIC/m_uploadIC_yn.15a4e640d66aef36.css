@@ -1,0 +1,218 @@
+.layui-layer-tips .layui-layer-content {
+  font-size: 14px !important;
+}
+.layui-layer-content > .layui-layer-TipsG.layui-layer-TipsB {
+  right: 12px !important;
+}
+.initContent {
+  height: 160px;
+}
+.btnUpload {
+  bottom: -65px;
+}
+.dragImageDiv {
+  padding-top: 60px;
+}
+.upimgBox_Mobile > a {
+  margin: 3% 5%;
+}
+.inputDnD {
+  top: -150px;
+  height: 150px;
+}
+.inputDnD .form-control-file {
+  margin-top: 5%;
+  height: 60px;
+}
+.textB {
+  margin-top: 15%;
+}
+@media (min-width: 320px) {
+  .textB {
+    margin-top: 20%;
+  }
+  .upimgBox_Mobile > a {
+    margin: 12px 14px;
+  }
+}
+@media (min-width: 350px) {
+  .upimgBox_Mobile > a {
+    margin: 14px 14px;
+  }
+  .inputDnD .form-control-file {
+    margin-top: 4%;
+    height: 60px;
+  }
+}
+@media (min-width: 400px) {
+  .upimgBox_Mobile > a {
+    margin: 14px 14px;
+  }
+  .textB {
+    margin-top: 15%;
+  }
+}
+@media (min-width: 768px) {
+  .upimgBox_Mobile > a {
+    margin: 22px auto;
+  }
+  .textB {
+    margin-top: 15%;
+  }
+  .inputDnD .form-control-file {
+    margin-top: 2%;
+    height: 60px;
+  }
+}
+.uploadTitle {
+  line-height: 48px;
+  color: #5d5d5d;
+  position: relative;
+  top: 8px;
+}
+.icon_close_upload {
+  top: -63px;
+}
+@media (min-width: 320px) {
+  .icon_close_upload {
+    top: -63px;
+  }
+}
+@media (min-width: 375px) {
+  .icon_close_upload {
+    top: -62px;
+  }
+}
+@media (min-width: 400px) {
+  .icon_close_upload {
+    top: -67px;
+  }
+}
+@media (min-width: 768px) {
+  .uploadTitle {
+    line-height: 80px;
+  }
+  .icon_close_upload {
+    top: -80px;
+    right: 40px;
+  }
+  .btnUpload {
+    background: url(../../../images/main/icon_folder.png) 15px center #50a5fc
+      no-repeat;
+    background-size: auto 55%;
+    bottom: -60px;
+    height: 30px;
+    line-height: 45px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    width: 110px;
+  }
+  .initContent {
+    margin-top: -7px;
+  }
+  .inputDnD {
+    top: -165px;
+  }
+  .textB {
+    margin-top: 8%;
+  }
+}
+.upimgBox_Mobile > a {
+  font-size: 0.9em;
+  height: 55px;
+  line-height: 55px;
+}
+.uploadDiv {
+  height: 155px;
+  border: 1px solid #747474;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .uploadDiv {
+    height: 165px;
+  }
+}
+.uploadImgDiv {
+  height: 111px;
+}
+@media (min-width: 350px) {
+  .uploadImgDiv {
+    height: 115px;
+  }
+}
+@media (min-width: 400px) {
+  .uploadImgDiv {
+    height: 116px;
+  }
+}
+@media (min-width: 768px) {
+  .uploadImgDiv {
+    height: 111px;
+  }
+}
+.btn_confirm {
+  display: inline-block;
+}
+.btn_confirmText {
+  display: inline-block;
+}
+@media (max-width: 456px) {
+  .btn_confirm {
+    display: table-cell;
+  }
+  .btn_confirmText {
+    display: table-cell;
+  }
+}
+@media (max-width: 455px) {
+  .btn_confirm:before {
+    vertical-align: top;
+  }
+  .btn_confirmText {
+    line-height: 1.5em;
+  }
+}
+.borderYN {
+  border: 1px solid #f00;
+}
+.cashSkinMobile .icon_close_upload {
+  top: -55px;
+  right: 10px;
+}
+.cashSkinMobile .uploadImgDiv {
+  position: relative;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .cashSkinMobile .icon_close_upload {
+    top: -83px;
+    right: 10px;
+  }
+}
+.uploadDiv {
+  position: relative;
+}
+.cameraOnly.form-control-file {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.btnUpload.camera_w {
+  background: url(/Mobile/images/main/icon_camera_W.svg) 15px center #50a5fc
+    no-repeat;
+  background-size: auto 55%;
+  top: unset;
+  line-height: 30px;
+}
+body .cashSkin.uploadImage .layui-layer-content {
+  margin: 3px 4% 12px 4%;
+}
+@media (min-width: 400px) {
+  body .cashSkin.uploadImage .layui-layer-content {
+    margin: 3px 4% 8px 4%;
+  }
+}

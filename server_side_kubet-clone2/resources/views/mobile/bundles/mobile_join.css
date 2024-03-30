@@ -1,0 +1,295 @@
+/*會員註冊*/
+/*身分證號認證/綁定手機*/
+.img_addID {
+  height: 70px;
+  width: auto;
+  display: table;
+  margin: 20px auto -10px;
+}
+
+@media (min-width: 400px) {
+  .img_addID {
+    height: 80px;
+    margin: 20px auto -10px;
+  }
+}
+
+/*補充註冊-添加銀行卡泡泡提示視窗*/
+.txt_prompt {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  background-color: #f90;
+  color: #fff;
+  padding: 6px 10px 5px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 0.7em;
+  line-height: 1.35em;
+  z-index: 2;
+  display: none;
+}
+
+.txt_prompt div {
+  display: table-cell;
+}
+
+.txt_prompt div:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.txt_prompt:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  border-style: solid;
+  border-width: 0 9px 9px 0;
+  border-color: transparent transparent #f90 transparent;
+}
+
+.txt_prompt.top {
+  top: -67px;
+}
+
+.txt_prompt.top:before {
+  top: auto;
+  bottom: -8px;
+  border-width: 9px 9px 0 0;
+  border-color: #f90 transparent transparent transparent;
+}
+
+@media (min-width: 400px) {
+  .txt_prompt {
+    top: 68px;
+  }
+
+  .txt_prompt.top {
+    top: -75px;
+  }
+}
+
+@media (min-width: 530px) {
+  .txt_prompt.top {
+    top: -55px;
+  }
+}
+
+@media (min-width: 768px) {
+  .txt_prompt {
+    font-size: 0.9em;
+    top: 72px;
+  }
+
+  .txt_prompt.top {
+    top: -65px;
+  }
+}
+
+/*身份上传*/
+.popupUpload {
+  padding: 0 0 20px;
+  position: relative;
+  background-color: #fff;
+}
+
+.popupUpload .error_t {
+  left: 7%;
+  right: 7%;
+  bottom: 0;
+  line-height: 20px;
+}
+
+.uploadBox {
+  width: 86%;
+  margin: 0 auto;
+  border: 1px solid #747474;
+  border-radius: 10px;
+  overflow: hidden;
+  display: table;
+}
+
+.uploadBox + .uploadBox {
+  margin-top: 15px;
+}
+
+.uploadBox.error {
+  border-color: #f00;
+}
+
+.uploadBoxIn {
+  display: table-cell;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.btn_upload {
+  display: block;
+  height: 43px;
+  line-height: 43px;
+  position: relative;
+  border: 1px solid #c4c4c4;
+  padding-left: 7%;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.btn_upload:active {
+  background-color: #f6f6f6;
+}
+
+.btn_upload + .btn_upload {
+  margin-top: 8px;
+}
+
+.btn_upload img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 7%;
+  height: 40%;
+  width: auto;
+  margin: auto 0;
+}
+
+.btn_take,
+.btn_TL {
+  display: table;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 10px 0 40px;
+  color: #fff;
+  background: #50a5fc url(/Areas/Mobile/Content/Images/vi-vn/icon_folder.png)
+    no-repeat 10px center;
+  background-size: auto 55%;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.btn_take:active,
+.btn_TL:active {
+  background-color: #a7d2fd;
+}
+
+.btn_take {
+  background-image: url(/Areas/Mobile/Content/Images/vi-vn/icon_cameraW.svg);
+  background-size: auto 22px;
+  bottom: 10px;
+}
+
+.txt_upload {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.loadingBox {
+  border: 1px solid #5a89d5;
+  border-radius: 2px;
+  width: 70%;
+  height: 10px;
+  margin: 10px auto 20px;
+  overflow: hidden;
+}
+
+.loadingBar {
+  background-color: #5a89d5;
+  height: 100%;
+}
+
+.img_photo,
+.img_upload {
+  width: auto;
+  height: auto;
+  max-width: calc(100% - 10px);
+  max-height: 75px;
+  display: block;
+  margin: 5px auto 40px;
+}
+
+.img_photo {
+  max-height: calc(100% - 10px);
+  margin: auto;
+}
+
+.loadingText {
+  color: #686767;
+}
+
+@media (min-width: 350px) {
+  .uploadBoxIn {
+    height: 150px;
+  }
+
+  .btn_TL {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px 0 40px;
+  }
+
+  .btn_upload {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 15px;
+  }
+
+  .img_upload {
+    max-height: 103px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: 400px) {
+  .uploadBoxIn {
+    height: 175px;
+  }
+
+  .btn_upload {
+    height: 63px;
+    line-height: 63px;
+  }
+
+  .btn_upload + .btn_upload {
+    margin-top: 10px;
+  }
+
+  .btn_upload img {
+    height: 35%;
+  }
+
+  .img_upload {
+    max-height: 125px;
+    margin-bottom: 45px;
+  }
+
+  .btn_TL {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 50px;
+    padding-right: 15px;
+    background-position-x: 15px;
+  }
+}
+
+/*设置保护密码*/
+.loginSet {
+  font-size: 0.85em;
+  text-align: center;
+  padding: 21px 4%;
+}
+
+@media (min-width: 400px) {
+  .loginSet {
+    padding: 27px 4%;
+  }
+}

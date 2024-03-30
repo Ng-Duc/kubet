@@ -1,0 +1,176 @@
+.container_login {
+  margin-top: 0 !important;
+  padding-top: 45px;
+}
+.btn_ADnew {
+  background-color: #fff;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 1;
+  top: 0;
+}
+.btn_ADclose {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: url(../../images/main/btn_close_G.svg) no-repeat center;
+  background-size: auto 25%;
+  width: 35px;
+  left: 0;
+}
+.btn_ADclose:active {
+  opacity: 0.6;
+}
+.ADtxt {
+  font-size: 0.75em;
+  position: absolute;
+  padding-left: 42px;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.ADtxt:before {
+  content: "";
+  background: url(../../images/yn/logo_THAapp2.png) no-repeat center;
+  background-size: 100% auto;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+}
+.ADtxt div {
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 1.05em;
+}
+.ADtxt.VIPapp:before {
+  content: "";
+  background: url(../../images/TS77/logo_VIPapp2.png) no-repeat center;
+  background-size: 100% auto;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+}
+.btn_ADdl {
+  background-color: #419eda;
+  border-radius: 2px;
+  padding: 5px 8px;
+  color: #fff;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  font-size: 0.85em;
+}
+.btn_ADdl:active {
+  background-color: #4caeff;
+}
+.btn_ADdlNew {
+  background-color: #cfaa75;
+  color: #fff;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  font-size: 0.85em;
+  padding: 5px 8px;
+}
+.btn_ADnew ~ .header {
+  top: 45px;
+}
+.btn_ADnew ~ .infor {
+  top: 90px;
+}
+.btn_ADnew ~ .container_main {
+  padding-top: 45px;
+}
+.btn_ADnew ~ .inforMDropOUT .inforMDrop {
+  top: 130px;
+}
+.btn_ADnew ~ .inforMDropOUT:after {
+  top: 125px;
+}
+@media (min-width: 350px) {
+  .btn_ADclose {
+    width: 40px;
+  }
+  .ADtxt {
+    left: 40px;
+    padding-left: 45px;
+  }
+  .btn_ADdl {
+    padding: 5px 10px;
+  }
+  .btn_ADdlNew {
+    padding: 5px 10px;
+  }
+}
+@media (min-width: 400px) {
+  .container_login {
+    padding-top: 55px;
+  }
+  .header_login {
+    top: 55px;
+  }
+  .btn_ADnew {
+    height: 55px;
+  }
+  .btn_ADclose {
+    width: 45px;
+  }
+  .ADtxt {
+    left: 45px;
+    padding-left: 55px;
+  }
+  .ADtxt:before {
+    width: 43px;
+    height: 43px;
+  }
+  .ADtxt.VIPapp:before {
+    width: 43px;
+    height: 43px;
+  }
+  .btn_ADdl {
+    border-radius: 3px;
+  }
+  .btn_ADnew ~ .header {
+    top: 55px;
+  }
+  .btn_ADnew ~ .infor {
+    top: 110px;
+  }
+  .btn_ADnew ~ .container_main {
+    padding-top: 55px;
+  }
+  .btn_ADnew ~ .inforMDropOUT .inforMDrop {
+    top: 160px;
+  }
+  .btn_ADnew ~ .inforMDropOUT:after {
+    top: 154px;
+  }
+}
+@media (min-width: 768px) {
+  .ADtxt {
+    font-size: 0.45em;
+  }
+  .btn_ADdl {
+    font-size: 0.51em;
+    padding: 5px 15px;
+  }
+  .btn_ADdlNew {
+    font-size: 0.51em;
+    padding: 5px 15px;
+  }
+}

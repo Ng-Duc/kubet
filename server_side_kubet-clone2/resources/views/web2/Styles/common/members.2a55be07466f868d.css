@@ -1,0 +1,957 @@
+.hidden {
+  display: none;
+}
+input[type="button"] {
+  -webkit-appearance: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, "微軟正黑體";
+  background-color: #f5f5f5;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  border: 1px solid #e5e5e5 !important;
+}
+input:disabled:-webkit-autofill,
+textarea:disabled:-webkit-autofill,
+select:disabled:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #ebebe4 inset !important;
+}
+.join_members input[type="button"],
+.join_members input[type="text"],
+.join_members input[type="password"],
+.join_members select,
+.icon_bankEye,
+.btn_ver_code,
+.btn_SentOut.tempBtn {
+  outline: none;
+}
+.join_members input[type="button"]:disabled,
+.join_members input[type="submit"]:disabled {
+  background-color: #888;
+  cursor: default;
+}
+.join_members input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #888;
+  font-size: 13.33px;
+}
+.join_members input:-ms-input-placeholder {
+  color: #888;
+}
+.verification input[type="text"]:disabled {
+  background-color: #f5f5f5;
+  color: #888;
+}
+.verification input[type="button"]:disabled {
+  background-color: #eeeded;
+  color: #555;
+}
+.verification #btnContactCS:disabled {
+  background-color: #888;
+  color: #fff;
+}
+select::-ms-expand {
+  display: none;
+}
+select {
+  background-image: url(/images/main/add/icon_select.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+div:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wraper {
+  width: 100%;
+  height: 100%;
+  background: url(/images/main/add/TS_BG.jpg) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.black_screen {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.join_members {
+  width: 500px;
+  min-height: 210px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+.members_header {
+  color: #fff;
+  height: 70px;
+  background-color: #226196;
+  text-align: center;
+  font-size: 22px;
+  line-height: 70px;
+  position: relative;
+}
+.btn_close {
+  width: 50px;
+  height: 50px;
+  background: url(/images/main/add/btn_close.svg) no-repeat center;
+  background-size: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.btn_close:hover {
+  opacity: 1;
+}
+.members_bottom {
+  background-color: #f5f5f5;
+}
+.member_info,
+.verification {
+  width: 385px;
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-right: 3px;
+  border-bottom: 1px solid #ddd;
+}
+.text_content {
+  line-height: 21px;
+  color: #000;
+  font-size: 15px;
+}
+.voice_prompt {
+  width: 270px;
+  height: 30px;
+  background: url(/images/main/add/icon_notice.svg) no-repeat 0 center;
+  background-size: 4%;
+  margin-left: 115px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #ff0006;
+  line-height: 30px;
+}
+.input_info {
+  margin-top: 10px;
+  position: relative;
+}
+.input_title {
+  font-size: 14px;
+  color: #333;
+  float: left;
+  line-height: 38px;
+}
+.input_box {
+  width: 270px;
+  height: 38px;
+  float: right;
+  padding: 0 8px;
+  box-sizing: border-box;
+  color: #000;
+  border: 1px solid #e5e5e5;
+}
+.input_box.left {
+  float: none;
+  width: 133px;
+  display: inline-block;
+}
+.input_box.right {
+  width: 133px;
+  float: none;
+  margin-left: 4px;
+  display: inline-block;
+}
+.Resend_ver_code {
+  width: 110px;
+  height: 27px;
+  text-align: left;
+  padding-left: 10px;
+  background-color: #eeeded;
+  border: 0;
+  border-radius: 2px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #555;
+  cursor: pointer;
+}
+.Resend_ver_code.on {
+  padding-left: 6px;
+  text-align: center;
+  background-color: #279a32;
+  color: #fff;
+}
+.Resend_ver_code.on:hover {
+  background-color: #40ac4a;
+}
+.VER_seconds {
+  color: #ff0008;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.btn_message {
+  width: 55px;
+  height: 27px;
+  line-height: 27px;
+  text-align: left;
+  background: url(/images/main/add/icon_message.svg) no-repeat 35px center;
+  background-size: 28%;
+  background-color: #4ea6ff;
+  padding: 0;
+  padding-left: 4px;
+  border: 0;
+  color: #fff;
+  border-radius: 2px !important;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.btn_message:hover {
+  background-color: #67b1fc;
+}
+.btn_voice {
+  width: 55px;
+  height: 27px;
+  text-align: left;
+  background: url(/images/main/add/icon_voice.svg) no-repeat 33px center;
+  background-size: 28%;
+  background-color: #e33c40;
+  border: 0;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.btn_voice:hover {
+  background-color: #e4676b;
+}
+.btn_verification {
+  width: 45px;
+  height: 27px;
+  padding-right: 5px;
+  text-align: right;
+  line-height: 27px;
+  color: #00b51a;
+  background-size: 32%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.phonemessage_text {
+  float: left;
+  margin-left: 2px;
+  line-height: 27px;
+}
+.btn_ver_code {
+  width: 55px;
+  height: 27px;
+  background-color: #aaa;
+  text-align: center;
+  line-height: 27px;
+  border-radius: 2px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: default;
+}
+.btn_blue,
+.btn_ver_code.on {
+  background-color: #4ea6ff;
+  text-align: center;
+  line-height: 27px;
+  cursor: pointer;
+}
+.btn_blue:hover,
+.btn_ver_code.on :hover {
+  background-color: #67b1fc;
+}
+.join_norm {
+  width: 385px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.norm_phonemessage,
+.norm_clause {
+  color: #333;
+}
+.icon_checkbox {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  background-color: #fff;
+  float: left;
+  cursor: pointer;
+}
+.icon_check,
+.icon_checkbox.on {
+  background: url(/images/main/add/icon_check.svg) no-repeat center;
+  background-color: #fff;
+  background-size: 80%;
+}
+.text_agree {
+  margin-top: 4px;
+  float: left;
+  margin-left: 5px;
+  line-height: 25px;
+}
+.check_text {
+  float: left;
+  line-height: 25px;
+  margin-left: 10px;
+}
+.norm_service {
+  cursor: pointer;
+  color: #0096ff;
+  text-decoration: underline;
+}
+.btn_SentOut {
+  width: 385px;
+  height: 50px;
+  display: block;
+  margin: 5px auto 0;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  background-size: 6%;
+  background-color: #5a88d5;
+  cursor: pointer;
+}
+.btn_SentOut:hover {
+  background-color: #6b93d7;
+}
+.btn_wraper {
+  display: table;
+  margin: 0 auto;
+}
+.icon_determine {
+  float: left;
+  margin-top: 13px;
+}
+.btn_text {
+  line-height: 50px;
+  float: left;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.btn_resend {
+  width: 55px;
+  height: 27px;
+  line-height: 27px;
+  border-radius: 2px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #69b950;
+  text-align: center;
+  line-height: 27px;
+}
+.btn_resend:hover {
+  background-color: #88be77;
+}
+.red_t {
+  color: #f00;
+}
+.become_members {
+  text-align: center;
+  font-size: 21px;
+  line-height: 180px;
+  color: #000;
+}
+.btn_deposit {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 5px 0 0;
+  margin-left: 45px;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 25px;
+  border: 0;
+  background: url(/images/main/add/icon_money.svg) no-repeat 130px center;
+  background-size: 11%;
+  background-color: #ff8d00;
+  cursor: pointer;
+  float: left;
+}
+.btn_deposit:hover {
+  background-color: #fca334;
+}
+.btn_Browse {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 5px 0 0;
+  margin-right: 45px;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 25px;
+  border: 0;
+  background: url(/images/main/add/icon_certain1.svg) no-repeat 135px center;
+  background-size: 10%;
+  background-color: #5a88d5;
+  cursor: pointer;
+  float: right;
+}
+.btn_Browse:hover {
+  background-color: #6b93d7;
+}
+a.setAccounts {
+  font-weight: bold;
+  color: #ff0;
+  text-decoration: yellow;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a.setAccounts:hover {
+  color: #ffd700;
+  text-decoration: gold;
+}
+.inputred {
+  border: 2px #ffa500 solid;
+  outline: none;
+}
+.layui-layer-btn {
+  text-align: center !important;
+}
+.tempBtn {
+  margin-top: 5px;
+}
+.btn_ver_code_ok {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  background: url(/images/main/add/icon_verification.svg) no-repeat 0 4px;
+  background-size: 92%;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+.layui-layer-title {
+  border-bottom: 1px solid #d1d1d1 !important;
+}
+.layui-layer-dialog .layui-layer-content {
+  padding: 20px;
+}
+.layui-anim .layui-layer-btn a {
+  border-color: #4898d5;
+  background-color: #2e8ded;
+  color: #fff;
+}
+.layui-anim .layui-layer-btn .layui-layer-btn0 {
+  border: 1px solid #dedede;
+  background-color: #f1f1f1;
+  color: #333;
+}
+.confirm_title {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.uppercase::-webkit-input-placeholder {
+  text-transform: none !important;
+}
+.uppercase:-moz-placeholder {
+  text-transform: none !important;
+}
+.uppercase::-moz-placeholder {
+  text-transform: none !important;
+}
+.uppercase:-ms-input-placeholder {
+  text-transform: none !important;
+}
+.qrDiv {
+  width: 330px;
+  margin: 20px auto;
+}
+.QR {
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid #c2c2c2;
+  color: #333;
+  font-size: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+.QRimg {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 18px auto;
+  margin-bottom: 10px;
+}
+.QR span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.appID {
+  color: #234d87;
+  margin-top: 2px;
+}
+.btn_example {
+  background-image: none;
+  padding: 0;
+}
+.textarea01 {
+  border: 1px solid #f00;
+  width: 500px;
+  height: 500px;
+}
+input.loading,
+select.loading {
+  background-image: url("/images/loading.gif") !important;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 15px;
+}
+input.loading:disabled {
+  background-color: #fff !important;
+}
+select.loading:disabled:disabled {
+  background-color: #fff !important;
+}
+select.noCheckIcon {
+  background-image: none;
+}
+select:disabled {
+  background-color: #e5e5e5 !important;
+  color: #808080 !important;
+}
+#divIdCard.IdCarddialog {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  width: 280px;
+  height: auto;
+  font-size: 15px;
+}
+#divIdCard.IdCarddialog input[type="text"] {
+  width: 100%;
+}
+#divIdCard.IdCarddialog input[type="button"] {
+  width: 100%;
+  background-position-x: 35%;
+  margin-top: 30px;
+}
+::-ms-clear {
+  display: none;
+}
+::-ms-reveal {
+  display: none;
+}
+.openCenter {
+  margin: auto;
+  border: 1px solid #999;
+  margin-top: 15%;
+}
+.checkBank {
+  cursor: pointer;
+  float: right;
+  color: #3864aa;
+  text-decoration: underline;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+}
+.checkBank::before {
+  position: absolute;
+  left: -20px;
+  top: 1px;
+  bottom: 0;
+  margin: auto;
+  content: " ";
+  background: url(../../images/main/icon_prompt.png) no-repeat center;
+  background-size: 100%;
+  width: 15px;
+  height: 15px;
+}
+.checkBank:hover {
+  color: #89b4ff;
+}
+.checkBank_pop {
+  color: #3864aa;
+  text-decoration: underline;
+  display: block;
+  display: table;
+  margin: 0 auto;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.checkBank_pop::before {
+  position: absolute;
+  left: -20px;
+  top: 1px;
+  bottom: 0;
+  margin: auto;
+  content: " ";
+  background: url(../../images/main/icon_prompt.png) no-repeat center;
+  background-size: 100%;
+  width: 15px;
+  height: 15px;
+}
+.btn_bankEye {
+  float: left;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.icon_bankEye {
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/icon_pwON.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  float: left;
+}
+.icon_bankEye:hover {
+  background-position: bottom;
+}
+.icon_bankEye.off {
+  background-image: url(/images/icon_pwOFF.svg);
+}
+.icon_bankEye.off:hover {
+  background-position: bottom;
+}
+.signMsg {
+  position: absolute;
+  top: 47px;
+  z-index: 99;
+  left: 20px;
+  text-indent: -48px;
+  width: 295px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #3595cc;
+  padding-left: 62px;
+  color: #fff;
+  line-height: 1.4;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.signMsg:before {
+  content: "";
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #3695cd transparent transparent;
+  position: absolute;
+  z-index: 99;
+  top: -9px;
+  right: 15px;
+}
+.signMsg.signMsgTw {
+  width: max-content;
+  left: 120px;
+}
+.msgInfoContent {
+  color: #00f;
+  font: 15px Arial, "微軟正黑體";
+}
+.input_info .prompt {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  background-color: #2f7ec1;
+  color: #fff;
+  border-radius: 2px;
+  text-align: left;
+  padding: 6px 8px;
+  z-index: 5;
+  max-width: 185px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.input_info .prompt:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+  border-color: transparent transparent #2f7ec1 transparent;
+  position: absolute;
+  right: 10px;
+  top: -9px;
+}
+.formPrompt {
+  display: none;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 7px;
+  position: absolute;
+  padding: 8px;
+  padding-left: 35px;
+  background: url(/images/main/icon_prompt.png) #fff no-repeat center left 10px;
+  background-size: auto 55%;
+  bottom: 47px;
+  left: 116px;
+  height: 20px;
+  line-height: 1.5;
+}
+.formPrompt:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+.DDU_box {
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+.upimgBox {
+  display: block;
+  height: 250px;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  border: 1px solid #747474;
+  border-radius: 5px;
+  position: relative;
+  background-color: #fff;
+}
+.btnBox > button {
+  display: block;
+  line-height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 48%;
+  float: left;
+  cursor: pointer;
+}
+.btm_cancel {
+  border: 1px solid #c4c4c4;
+  color: #2e2e2e;
+  margin-right: 2%;
+}
+.btm_confirm {
+  border: 1px solid #226196;
+  color: #fff;
+  background-color: #226196;
+}
+.textA {
+  font-size: 15px;
+  color: #333;
+  width: 100%;
+  margin-bottom: 17px;
+  margin-top: 2px;
+  text-align: center;
+}
+.drag_image {
+  font-size: 19px;
+  font-weight: bold;
+  color: #2c82db;
+  background: url(../../images/main/icon_img.jpg) top center no-repeat;
+  margin: 20px auto;
+  padding-top: 60px;
+  width: 80%;
+  text-align: center;
+  margin-top: 60px;
+  height: 60%;
+}
+.btnUpload {
+  display: block;
+  width: 70px;
+  height: 37px;
+  line-height: 37px;
+  border-radius: 5px;
+  padding-left: 50px;
+  text-indent: 8px;
+  color: #fff;
+  z-index: 0;
+  position: absolute;
+  left: 18%;
+  font-size: 15px;
+  cursor: pointer;
+  background: url(../../images/main/icon_folder.png) 20px center #50a5fc
+    no-repeat;
+}
+.btnBox {
+  width: 80%;
+  margin: 0 10%;
+}
+.btm_confirm.Off,
+.btm_cancel.Off {
+  border: 1px solid #a0a0a0;
+  color: #fff;
+  background-color: #a0a0a0;
+}
+.inputDnD {
+  position: relative;
+  width: 80%;
+  margin: 0 10%;
+}
+.inputDnD .form-control-file {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  outline: none;
+  cursor: pointer;
+  background-color: #c61c23;
+  opacity: 0;
+}
+.inputDnD .form-control-file:before {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  line-height: 2em;
+  opacity: 1;
+  visibility: visible;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+.resultImg {
+  max-width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+.imgContent {
+  vertical-align: middle;
+  height: 100%;
+}
+.w3-border {
+  border: 1px solid #5a89d5;
+}
+.w3-grey {
+  background-color: #5a89d5;
+}
+.progressBox {
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+.progressBar {
+  height: 10px;
+  border-radius: 1px;
+}
+.textB {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 0.9em;
+  color: #686767;
+}
+.textCA {
+  font-size: 15px;
+  color: #f00;
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.uploadInputBox {
+  margin-top: -358px;
+}
+.check_b {
+  display: table;
+  line-height: 36px;
+  position: absolute;
+  left: 115px;
+  width: 300px;
+  margin-left: -3px;
+}
+.btn_check {
+  cursor: pointer;
+  display: inline-block;
+}
+.btn_check.on:before {
+  background: url(/images/main/add/icon_check.svg) no-repeat center;
+  background-size: 80%;
+  background-color: #fff;
+}
+.btn_check:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.checkText {
+  display: inline-block;
+}
+.captcha_error {
+  font-size: 12px;
+}
+.input_info .captchaNumber {
+  margin-top: 0;
+}
+.pwON {
+  position: relative;
+}
+.pwON .icon_pw {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 18px;
+  height: 18px;
+  background: url(/images/icon_pwON.svg) no-repeat top center;
+  background-size: 100%;
+  display: block;
+  opacity: 0.8;
+}
+.pwON .icon_pw:hover {
+  background-position: bottom;
+  opacity: 1;
+}
+.pwON.off .icon_pw {
+  background: url(/images/icon_pwOFF.svg) no-repeat top center;
+  background-size: 100%;
+  opacity: 0.8;
+}
+.pwON.off .icon_pw:hover {
+  background-position: bottom;
+  opacity: 1;
+}

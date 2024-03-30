@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<svg  id="1" viewBox="0 0 64 64" version="1.2" baseProfile="tiny"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="77px" height="77px"  xml:space="preserve">
+  <g>
+    <defs>
+      <linearGradient id="sGD" gradientUnits="userSpaceOnUse" x1="55" y1="46" x2="2" y2="46">
+        <stop offset="0.1" class="stop1"></stop>
+        <stop offset="1" class="stop2"></stop>
+      </linearGradient>
+    </defs>
+    <g stroke-width="4" stroke-linecap="round" fill="none" transform="rotate(80.0099 32 32)">
+      <path stroke="url(#sGD)" d="M4,32 c0,15,12,28,28,28c8,0,16-4,21-9"></path>
+      <path d="M60,32 C60,16,47.464,4,32,4S4,16,4,32"></path>
+      <animateTransform values="0,32,32;360,32,32" attributeName="transform" type="rotate" repeatCount="indefinite" dur="750ms">
+      </animateTransform>
+    </g>
+  </g>
+</svg>-->
+
+<!--<svg viewBox="0 0 64 64" version="1.2" baseProfile="tiny"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="77px" height="77px"  xml:space="preserve">
+  <g xmlns="http://www.w3.org/2000/svg" >
+    <circle cx="16" cy="32" stroke-width="0" r="3">
+      <animate attributeName="fill-opacity" dur="750ms" values=".5;.6;.8;1;.8;.6;.5;.5" repeatCount="indefinite"></animate>
+      <animate attributeName="r" dur="750ms" values="3;3;4;5;6;5;4;3" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="32" cy="32" stroke-width="0" r="3.06647">
+      <animate attributeName="fill-opacity" dur="750ms" values=".5;.5;.6;.8;1;.8;.6;.5" repeatCount="indefinite"></animate>
+      <animate attributeName="r" dur="750ms" values="4;3;3;4;5;6;5;4" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="48" cy="32" stroke-width="0" r="4.06647">
+      <animate attributeName="fill-opacity" dur="750ms" values=".6;.5;.5;.6;.8;1;.8;.6" repeatCount="indefinite"></animate>
+      <animate attributeName="r" dur="750ms" values="5;4;3;3;4;5;6;5" repeatCount="indefinite"></animate>
+    </circle>
+  </g>
+</svg>-->
+
+<!--<svg viewBox="0 0 64 64" version="1.2" baseProfile="tiny"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="64px" height="64px" style="fill:#444;stroke:#fff"  xml:space="preserve">
+  <g stroke-width="4">
+    <line y1="17" y2="29" transform="translate(32,32) rotate(180)">
+      <animate attributeName="stroke-opacity" dur="750ms" values="1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0;1" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(210)">
+      <animate attributeName="stroke-opacity" dur="750ms" values="0;1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(240)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".1;0;1;.85;.7;.65;.55;.45;.35;.25;.15;.1" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(270)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".15;.1;0;1;.85;.7;.65;.55;.45;.35;.25;.15" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(300)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".25;.15;.1;0;1;.85;.7;.65;.55;.45;.35;.25" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(330)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".35;.25;.15;.1;0;1;.85;.7;.65;.55;.45;.35" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(0)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".45;.35;.25;.15;.1;0;1;.85;.7;.65;.55;.45" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(30)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".55;.45;.35;.25;.15;.1;0;1;.85;.7;.65;.55" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(60)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".65;.55;.45;.35;.25;.15;.1;0;1;.85;.7;.65" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(90)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".7;.65;.55;.45;.35;.25;.15;.1;0;1;.85;.7" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(120)">
+      <animate attributeName="stroke-opacity" dur="750ms" values=".85;.7;.65;.55;.45;.35;.25;.15;.1;0;1;.85" repeatCount="indefinite"></animate>
+    </line>
+    <line y1="17" y2="29" transform="translate(32,32) rotate(150)">
+      <animate attributeName="stroke-opacity" dur="750ms" values="1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0;1" repeatCount="indefinite"></animate>
+    </line>
+  </g>
+</svg>-->
+
+<svg viewBox="0 0 64 64" version="1.2" baseProfile="tiny"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="64px" height="64px" style="fill:#fff;stroke:#444" xml:space="preserve">
+  <g stroke-width="0">
+    <circle cx="24" cy="0" transform="translate(32,32)" r="3.37756">
+      <animate attributeName="r" dur="750ms" values="8;7;6;5;4;3;2;1;8" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="16.970562748477143" cy="16.97056274847714" transform="translate(32,32)" r="4.37756">
+      <animate attributeName="r" dur="750ms" values="1;8;7;6;5;4;3;2;1" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="1.4695761589768238e-15" cy="24" transform="translate(32,32)" r="5.37756">
+      <animate attributeName="r" dur="750ms" values="2;1;8;7;6;5;4;3;2" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="-16.97056274847714" cy="16.970562748477143" transform="translate(32,32)" r="6.37756">
+      <animate attributeName="r" dur="750ms" values="3;2;1;8;7;6;5;4;3" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="-24" cy="2.9391523179536475e-15" transform="translate(32,32)" r="7.37756">
+      <animate attributeName="r" dur="750ms" values="4;3;2;1;8;7;6;5;4" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="-16.970562748477143" cy="-16.97056274847714" transform="translate(32,32)" r="5.35709">
+      <animate attributeName="r" dur="750ms" values="5;4;3;2;1;8;7;6;5" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="-4.408728476930472e-15" cy="-24" transform="translate(32,32)" r="1.37756">
+      <animate attributeName="r" dur="750ms" values="6;5;4;3;2;1;8;7;6" repeatCount="indefinite"></animate>
+    </circle>
+    <circle cx="16.970562748477136" cy="-16.970562748477143" transform="translate(32,32)" r="2.37756">
+      <animate attributeName="r" dur="750ms" values="7;6;5;4;3;2;1;8;7" repeatCount="indefinite"></animate>
+    </circle>
+  </g>
+</svg>

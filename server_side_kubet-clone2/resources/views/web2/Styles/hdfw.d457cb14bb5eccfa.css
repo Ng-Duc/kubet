@@ -1,0 +1,187 @@
+.cont_service .reback_A {
+  font-size: 14px;
+}
+.SerSelect div span:last-child {
+  border-bottom: 1px solid #d9d9d9 !important;
+}
+.cont_service .SerSelect div span {
+  border-bottom: 0;
+}
+.cont_service .reback {
+  font-size: 14px;
+  width: 89%;
+}
+.cont_service .h280 .reback_A {
+  width: 80%;
+}
+.cont_service .reback_A a {
+  width: 98%;
+}
+.layui-layer-dialog-customP {
+  padding-bottom: 25px;
+  background: #fff;
+  min-width: 350px;
+}
+.popup_hint3 {
+  margin: 0 auto;
+  line-height: 25px;
+  padding: 18px 0 7px;
+  color: #000;
+  font-size: 15px;
+  text-align: left;
+}
+.content_box {
+  width: 100%;
+  display: table;
+  position: relative;
+}
+.content_title {
+  width: 100%;
+  font-size: 15px;
+  text-align: left;
+  color: #000;
+  line-height: 38px;
+  font-weight: 700;
+}
+.contentbtn_box {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.waring_b {
+  color: #f00;
+  font-size: 13px;
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  line-height: 9px;
+}
+.contentbtn_box li {
+  cursor: pointer;
+  width: 98px;
+  height: 38px;
+  border: 1px solid #c2c2c2;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 5px;
+  color: #000;
+  float: left;
+  margin-right: 13px;
+}
+.contentbtn_box li:last-child {
+  margin-right: 0;
+}
+.contentbtn_box_a li {
+  cursor: pointer;
+  width: 123px;
+  height: 38px;
+  border: 1px solid #c2c2c2;
+  line-height: 38px;
+  border-radius: 5px;
+  color: #000;
+  float: left;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  padding-left: 89px;
+  position: relative;
+}
+.contentbtn_box_a li img {
+  position: absolute;
+  left: 30px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.contentbtn_box_a li:nth-child(even) {
+  margin-right: 0;
+}
+.phone_box {
+  width: 100%;
+  margin: 18px 0 0;
+  position: relative;
+}
+.phone_right input {
+  height: 38px;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  line-height: 38px;
+  width: calc(100% - 12px);
+  padding-left: 9px;
+  font-size: 14px;
+}
+.popup_form .btn_confirm {
+  font-size: 15px;
+  width: 100%;
+}
+.popup_form .input_box {
+  border-radius: 5px !important;
+}
+.w_395 {
+  width: 395px;
+}
+.kfzx-title {
+  width: 100%;
+  height: 46px;
+  line-height: 48px;
+  text-align: center;
+  color: #3a9b7c;
+  font-size: 20px;
+}
+.kfzx-content {
+  width: calc(100% - 59px);
+  margin: 0 auto;
+}
+.kfzx-popup_hint3 {
+  margin: 0 auto;
+  line-height: 23px;
+  padding: 0 0 20px;
+  color: #000;
+  font-size: 14px;
+  border-bottom: 1px solid #3a9b7c;
+  margin-bottom: 16px;
+  letter-spacing: 0.06em;
+}
+.kfzx-content_box {
+  width: 100%;
+  display: table;
+  position: relative;
+}
+.kfzx-content_title {
+  width: 100%;
+  font-size: 15px;
+  text-align: left;
+  color: #000;
+  line-height: 33px;
+}
+.kfzx-contentbtn_box {
+  width: 100%;
+  margin-bottom: 16px;
+  display: table;
+}
+.kfzx-waring_b {
+  color: #f00;
+  font-size: 12px;
+  line-height: 0;
+  width: 100%;
+  text-align: right;
+  float: right;
+}
+.kfzx-phone_box {
+  width: 100%;
+  position: relative;
+  display: table;
+}
+.kfzx-phone_right {
+  width: 100%;
+  height: 40px;
+  float: right;
+  margin-bottom: 18px;
+}
+.kfzx-phone_right input {
+  height: 36px;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  line-height: 38px;
+  width: calc(100% - 12px);
+  padding-left: 9px;
+  font-size: 15px;
+}
