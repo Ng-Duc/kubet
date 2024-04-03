@@ -7297,11 +7297,11 @@ body {
 
 .icon_jackpot {
   /*-*/
-  background-image: url(/Content/Images/vi-vn/Graph/icon_superGold.svg);
+  background-image: url(/Content/Images/vi-vn/Graph/icon_superGold1.svg);
   background-size: 100% auto;
-  width: 70px;
-  height: 62px;
-  left: 0;
+  width: 55px;
+  height: 75px;
+  left: 5px;
   top: 6px;
 }
 
