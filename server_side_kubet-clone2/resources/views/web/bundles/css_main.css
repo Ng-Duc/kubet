@@ -11937,3 +11937,21 @@ body {
     word-spacing: -0.5px;
     letter-spacing: -0.5px;
 }
+
+
+.marqueeDiv{
+    height: 45px;
+    animation-duration: 21.2667s;
+}
+
+.marquee .marqueeDiv {
+    animation: marquee linear infinite;
+    transform: translateX(-100%);
+    animation-play-state: running;
+}
+
+.marquee .marqueeDiv {
+    display: inline-flex;
+    padding-left: 100%;
+    margin-right: 20px;
+}
