@@ -6907,6 +6907,9 @@ body {
     cursor: pointer;
     float: left;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .subListDiv:not(.off):not(.notice) {
@@ -6957,7 +6960,7 @@ body {
 }
 
 .subListTwo .subListDiv {
-    height: 50%;
+    height: 100%;
 }
 
 .listName {
@@ -7380,7 +7383,8 @@ body {
 
 .subListTwo .listLogo {
     height: 100px;
-    top: 40px;
+    top: 231px;
+    left: 65px;
 }
 
 .subList:not(.subListTwo) .Darkened2 ~ .listLogo,
